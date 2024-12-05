@@ -1,0 +1,11 @@
+NHỮNG LƯU Ý KHI CHẠY SOURCE
+--Về script 
+Chạy script trước khi chạy Project
+Chạy MetaData_Stage.sql trước: Chạy TỪNG DÒNG LỆNH
+Chạy tiếp NDS.sql: cũng chạy TỪNG LỆNH
+	+ Phần tạo bảng: Thứ tự chạy STATES_NDS -> COUNTIES_NDS -> AQI_NDS
+
+--Về project
+Cần chỉnh lại các đường link nạp dữ liệu từ Localhost vào
+	+ SQL Server - MetaData, STAGE, NDS
+	+ File .csv

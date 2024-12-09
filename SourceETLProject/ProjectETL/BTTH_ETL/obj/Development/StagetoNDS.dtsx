@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="17"
-  DTS:VersionGUID="{9D9183F4-BECE-4948-868B-6F44C860BABA}">
+  DTS:VersionBuild="24"
+  DTS:VersionGUID="{1DABFAA5-001C-47C0-9159-262AAB6A456B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -6256,17 +6256,17 @@ where [refTable].[state_id] = ?</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="168,42"
-          Id="Package\Load STATES_NDS"
-          TopLeft="476,63" />
+          Size="149,42"
+          Id="Package\Load AQI_NDS"
+          TopLeft="484,281" />
         <NodeLayout
           Size="171,42"
           Id="Package\Load COUNTY_NDS"
           TopLeft="477,172" />
         <NodeLayout
-          Size="149,42"
-          Id="Package\Load AQI_NDS"
-          TopLeft="484,281" />
+          Size="168,42"
+          Id="Package\Load STATES_NDS"
+          TopLeft="476,63" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="561.25,105">
@@ -6315,356 +6315,18 @@ where [refTable].[state_id] = ?</property>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Load STATES_NDS">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="150,42"
-          Id="Package\Load STATES_NDS\OLE DB Source"
-          TopLeft="544,40" />
-        <NodeLayout
-          Size="144,42"
-          Id="Package\Load STATES_NDS\Add SourceID"
-          TopLeft="550,152" />
-        <EdgeLayout
-          Id="Package\Load STATES_NDS.Paths[OLE DB Source Output]"
-          TopLeft="620.5,82">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,70"
-              Start="0,0"
-              End="0,62.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,62.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="113,42"
-          Id="Package\Load STATES_NDS\Lookup"
-          TopLeft="565,255" />
-        <NodeLayout
-          Size="166,42"
-          Id="Package\Load STATES_NDS\OLE DB Command"
-          TopLeft="360,355" />
-        <EdgeLayout
-          Id="Package\Load STATES_NDS.Paths[Lookup Match Output]"
-          TopLeft="604,297">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-161,58"
-              Start="0,0"
-              End="-161,50.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.6858638743456" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.6858638743456"
-                    Point2="0,23.6858638743456"
-                    Point3="-4,23.6858638743456" />
-                  <mssgle:LineSegment
-                    End="-157,23.6858638743456" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-157,23.6858638743456"
-                    Point2="-161,23.6858638743456"
-                    Point3="-161,27.6858638743456" />
-                  <mssgle:LineSegment
-                    End="-161,50.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-128.69138671875,28.6858638743456,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Load STATES_NDS\OLE DB Destination"
-          TopLeft="692,379" />
-        <EdgeLayout
-          Id="Package\Load STATES_NDS.Paths[Lookup No Match Output]"
-          TopLeft="639,297">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="138.5,82"
-              Start="0,0"
-              End="138.5,74.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.4869109947644" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,29.4869109947644"
-                    Point2="0,33.4869109947644"
-                    Point3="4,33.4869109947644" />
-                  <mssgle:LineSegment
-                    End="134.5,33.4869109947644" />
-                  <mssgle:CubicBezierSegment
-                    Point1="134.5,33.4869109947644"
-                    Point2="138.5,33.4869109947644"
-                    Point3="138.5,37.4869109947644" />
-                  <mssgle:LineSegment
-                    End="138.5,74.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="13.44361328125,38.4869109947644,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load STATES_NDS.Paths[Derived Column Output]"
-          TopLeft="621.75,194">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,61"
-              Start="0,0"
-              End="0,53.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,53.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\Load COUNTY_NDS">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="150,42"
-          Id="Package\Load COUNTY_NDS\OLE DB Source"
-          TopLeft="259,51" />
-        <NodeLayout
-          Size="144,42"
-          Id="Package\Load COUNTY_NDS\Add SourceID"
-          TopLeft="258,164" />
-        <EdgeLayout
-          Id="Package\Load COUNTY_NDS.Paths[OLE DB Source Output]"
-          TopLeft="332,93">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,71"
-              Start="0,0"
-              End="0,63.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,63.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="179,42"
-          Id="Package\Load COUNTY_NDS\Lookup STATES_NDS"
-          TopLeft="245,262" />
-        <NodeLayout
-          Size="183,42"
-          Id="Package\Load COUNTY_NDS\Lookup COUNTY_NDS"
-          TopLeft="243,370" />
-        <EdgeLayout
-          Id="Package\Load COUNTY_NDS.Paths[Derived Column Output]"
-          TopLeft="332.25,206">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,56"
-              Start="0,0"
-              End="0,48.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,48.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load COUNTY_NDS.Paths[Lookup Match Output]"
-          TopLeft="334.5,304">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,66"
-              Start="0,0"
-              End="0,58.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,58.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,23.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="166,42"
-          Id="Package\Load COUNTY_NDS\OLE DB Command"
-          TopLeft="177,465" />
-        <EdgeLayout
-          Id="Package\Load COUNTY_NDS.Paths[Lookup Match Output1]"
-          TopLeft="305.333333333333,412">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-45.3333333333333,53"
-              Start="0,0"
-              End="-45.3333333333333,45.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.4756229685807" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.4756229685807"
-                    Point2="0,21.4756229685807"
-                    Point3="-4,21.4756229685807" />
-                  <mssgle:LineSegment
-                    End="-41.3333333333333,21.4756229685807" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-41.3333333333333,21.4756229685807"
-                    Point2="-45.3333333333333,21.4756229685807"
-                    Point3="-45.3333333333333,25.4756229685807" />
-                  <mssgle:LineSegment
-                    End="-45.3333333333333,45.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-70.8580533854167,26.4756229685807,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Load COUNTY_NDS\OLE DB Destination"
-          TopLeft="417,469" />
-        <EdgeLayout
-          Id="Package\Load COUNTY_NDS.Paths[Lookup Error Output]"
-          TopLeft="363.666666666667,412">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="138.833333333333,57"
-              Start="0,0"
-              End="138.833333333333,49.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.0964247020585" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.0964247020585"
-                    Point2="0,23.0964247020585"
-                    Point3="4,23.0964247020585" />
-                  <mssgle:LineSegment
-                    End="134.833333333333,23.0964247020585" />
-                  <mssgle:CubicBezierSegment
-                    Point1="134.833333333333,23.0964247020585"
-                    Point2="138.833333333333,23.0964247020585"
-                    Point3="138.833333333333,27.0964247020585" />
-                  <mssgle:LineSegment
-                    End="138.833333333333,49.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="23.5502799479167,28.0964247020585,91.7327734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
     design-time-name="Package\Load AQI_NDS">
     <LayoutInfo>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="150,42"
-          Id="Package\Load AQI_NDS\OLE DB Source"
-          TopLeft="93,19" />
+          Size="204,42"
+          Id="Package\Load AQI_NDS\Lookup AQIentrySK in AQI"
+          TopLeft="340.909090909091,621.818181818182" />
         <NodeLayout
-          Size="142,42"
-          Id="Package\Load AQI_NDS\Add SourceId"
-          TopLeft="100,88" />
-        <EdgeLayout
-          Id="Package\Load AQI_NDS.Paths[OLE DB Source Output]"
-          TopLeft="169.5,61">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,27"
-              Start="0,0"
-              End="0,19.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="139,42"
+          Id="Package\Load AQI_NDS\Merge Join 1"
+          TopLeft="364,423" />
         <NodeLayout
           Size="267,42"
           Id="Package\Load AQI_NDS\Lookup CountySK from COUNTIES_NDS"
@@ -6673,6 +6335,90 @@ where [refTable].[state_id] = ?</property>
           Size="173,42"
           Id="Package\Load AQI_NDS\Update CountyCode"
           TopLeft="83,254" />
+        <NodeLayout
+          Size="98,42"
+          Id="Package\Load AQI_NDS\Sort"
+          TopLeft="467,122" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Load AQI_NDS\Sort 2"
+          TopLeft="577,301" />
+        <NodeLayout
+          Size="169,42"
+          Id="Package\Load AQI_NDS\UPDATE StateCode"
+          TopLeft="355.454545454545,527.272727272727" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Load AQI_NDS\COUNTIES_NDS"
+          TopLeft="433,26" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Load AQI_NDS\Merge Join"
+          TopLeft="564,217" />
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Load AQI_NDS\OLE DB Command"
+          TopLeft="256.363636363636,722.727272727273" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Load AQI_NDS\Sort 1"
+          TopLeft="681,123" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Load AQI_NDS\OLE DB Source"
+          TopLeft="93,19" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load AQI_NDS\OLE DB Destination"
+          TopLeft="523.636363636364,724.545454545455" />
+        <NodeLayout
+          Size="142,42"
+          Id="Package\Load AQI_NDS\STATES_NDS"
+          TopLeft="662,28" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Load AQI_NDS\Sort 3"
+          TopLeft="123,344" />
+        <NodeLayout
+          Size="142,42"
+          Id="Package\Load AQI_NDS\Add SourceId"
+          TopLeft="100,88" />
+        <EdgeLayout
+          Id="Package\Load AQI_NDS.Paths[Lookup Error Output]"
+          TopLeft="475.575757575758,663.818181818182">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="133.560606060606,60.7272727272727"
+              Start="0,0"
+              End="133.560606060606,53.2272727272727">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.5744605588964" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.5744605588964"
+                    Point2="0,24.5744605588964"
+                    Point3="4,24.5744605588964" />
+                  <mssgle:LineSegment
+                    End="129.560606060606,24.5744605588964" />
+                  <mssgle:CubicBezierSegment
+                    Point1="129.560606060606,24.5744605588964"
+                    Point2="133.560606060606,24.5744605588964"
+                    Point3="133.560606060606,28.5744605588964" />
+                  <mssgle:LineSegment
+                    End="133.560606060606,53.2272727272727" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="20.9139163115529,29.5744605588964,91.7327734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load AQI_NDS.Paths[Derived Column Output]"
           TopLeft="171.25,130">
@@ -6687,252 +6433,6 @@ where [refTable].[state_id] = ?</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,26.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load AQI_NDS.Paths[Lookup Match Output]"
-          TopLeft="170.5,206">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,48"
-              Start="0,0"
-              End="0,40.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,40.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,14.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="98,42"
-          Id="Package\Load AQI_NDS\Sort"
-          TopLeft="467,122" />
-        <NodeLayout
-          Size="155,42"
-          Id="Package\Load AQI_NDS\COUNTIES_NDS"
-          TopLeft="433,26" />
-        <NodeLayout
-          Size="142,42"
-          Id="Package\Load AQI_NDS\STATES_NDS"
-          TopLeft="662,28" />
-        <NodeLayout
-          Size="107,42"
-          Id="Package\Load AQI_NDS\Sort 1"
-          TopLeft="681,123" />
-        <EdgeLayout
-          Id="Package\Load AQI_NDS.Paths[OLE DB Source Output1]"
-          TopLeft="513.25,68">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,54"
-              Start="0,0"
-              End="0,46.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,46.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load AQI_NDS.Paths[OLE DB Source Output2]"
-          TopLeft="733.75,70">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,53"
-              Start="0,0"
-              End="0,45.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="130,42"
-          Id="Package\Load AQI_NDS\Merge Join"
-          TopLeft="564,217" />
-        <EdgeLayout
-          Id="Package\Load AQI_NDS.Paths[Sort Output]"
-          TopLeft="516,164">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="113,53"
-              Start="0,0"
-              End="113,45.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.5"
-                    Point2="0,26.5"
-                    Point3="4,26.5" />
-                  <mssgle:LineSegment
-                    End="109,26.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="109,26.5"
-                    Point2="113,26.5"
-                    Point3="113,30.5" />
-                  <mssgle:LineSegment
-                    End="113,45.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load AQI_NDS.Paths[Sort Output1]"
-          TopLeft="734.5,165">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-85.1666666666666,52"
-              Start="0,0"
-              End="-85.1666666666666,44.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.8206686930091" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26.8206686930091"
-                    Point2="0,30.8206686930091"
-                    Point3="-4,30.8206686930091" />
-                  <mssgle:LineSegment
-                    End="-81.1666666666666,30.8206686930091" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-81.1666666666666,30.8206686930091"
-                    Point2="-85.1666666666666,30.8206686930091"
-                    Point3="-85.1666666666666,34.8206686930091" />
-                  <mssgle:LineSegment
-                    End="-85.1666666666666,44.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="107,42"
-          Id="Package\Load AQI_NDS\Sort 2"
-          TopLeft="577,301" />
-        <EdgeLayout
-          Id="Package\Load AQI_NDS.Paths[Merge Join Output]"
-          TopLeft="629.75,259">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,42"
-              Start="0,0"
-              End="0,34.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="107,42"
-          Id="Package\Load AQI_NDS\Sort 3"
-          TopLeft="123,344" />
-        <EdgeLayout
-          Id="Package\Load AQI_NDS.Paths[OLE DB Command Output]"
-          TopLeft="173,296">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,48"
-              Start="0,0"
-              End="0,40.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,40.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Load AQI_NDS\Merge Join 1"
-          TopLeft="364,423" />
-        <EdgeLayout
-          Id="Package\Load AQI_NDS.Paths[Sort Output2]"
-          TopLeft="176.5,386">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="257,37"
-              Start="0,0"
-              End="257,29.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,14.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,14.5"
-                    Point2="0,18.5"
-                    Point3="4,18.5" />
-                  <mssgle:LineSegment
-                    End="253,18.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="253,18.5"
-                    Point2="257,18.5"
-                    Point3="257,22.5" />
-                  <mssgle:LineSegment
-                    End="257,29.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6975,24 +6475,32 @@ where [refTable].[state_id] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="169,42"
-          Id="Package\Load AQI_NDS\UPDATE StateCode"
-          TopLeft="355.454545454545,527.272727272727" />
         <EdgeLayout
-          Id="Package\Load AQI_NDS.Paths[Merge Join Output1]"
-          TopLeft="436.727272727273,465">
+          Id="Package\Load AQI_NDS.Paths[Sort Output2]"
+          TopLeft="176.5,386">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,62.2727272727274"
+              EndConnector="257,37"
               Start="0,0"
-              End="0,54.7727272727274">
+              End="257,29.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,54.7727272727274" />
+                    End="0,14.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.5"
+                    Point2="0,18.5"
+                    Point3="4,18.5" />
+                  <mssgle:LineSegment
+                    End="253,18.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="253,18.5"
+                    Point2="257,18.5"
+                    Point3="257,22.5" />
+                  <mssgle:LineSegment
+                    End="257,29.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7001,10 +6509,140 @@ where [refTable].[state_id] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="204,42"
-          Id="Package\Load AQI_NDS\Lookup AQIentrySK in AQI"
-          TopLeft="340.909090909091,621.818181818182" />
+        <EdgeLayout
+          Id="Package\Load AQI_NDS.Paths[Sort Output1]"
+          TopLeft="734.5,165">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-85.1666666666666,52"
+              Start="0,0"
+              End="-85.1666666666666,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.8206686930091" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.8206686930091"
+                    Point2="0,30.8206686930091"
+                    Point3="-4,30.8206686930091" />
+                  <mssgle:LineSegment
+                    End="-81.1666666666666,30.8206686930091" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-81.1666666666666,30.8206686930091"
+                    Point2="-85.1666666666666,30.8206686930091"
+                    Point3="-85.1666666666666,34.8206686930091" />
+                  <mssgle:LineSegment
+                    End="-85.1666666666666,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load AQI_NDS.Paths[Sort Output]"
+          TopLeft="516,164">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="113,53"
+              Start="0,0"
+              End="113,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.5"
+                    Point2="0,26.5"
+                    Point3="4,26.5" />
+                  <mssgle:LineSegment
+                    End="109,26.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="109,26.5"
+                    Point2="113,26.5"
+                    Point3="113,30.5" />
+                  <mssgle:LineSegment
+                    End="113,45.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load AQI_NDS.Paths[OLE DB Source Output2]"
+          TopLeft="733.75,70">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,53"
+              Start="0,0"
+              End="0,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load AQI_NDS.Paths[OLE DB Source Output1]"
+          TopLeft="513.25,68">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54"
+              Start="0,0"
+              End="0,46.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load AQI_NDS.Paths[OLE DB Source Output]"
+          TopLeft="169.5,61">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,27"
+              Start="0,0"
+              End="0,19.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load AQI_NDS.Paths[OLE DB Command Output1]"
           TopLeft="441.431818181818,569.272727272727">
@@ -7027,10 +6665,72 @@ where [refTable].[state_id] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="166,42"
-          Id="Package\Load AQI_NDS\OLE DB Command"
-          TopLeft="256.363636363636,722.727272727273" />
+        <EdgeLayout
+          Id="Package\Load AQI_NDS.Paths[OLE DB Command Output]"
+          TopLeft="173,296">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48"
+              Start="0,0"
+              End="0,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load AQI_NDS.Paths[Merge Join Output1]"
+          TopLeft="436.727272727273,465">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,62.2727272727274"
+              Start="0,0"
+              End="0,54.7727272727274">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54.7727272727274" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load AQI_NDS.Paths[Merge Join Output]"
+          TopLeft="629.75,259">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42"
+              Start="0,0"
+              End="0,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load AQI_NDS.Paths[Lookup Match Output1]"
           TopLeft="442.909090909091,663.818181818182">
@@ -7067,43 +6767,27 @@ where [refTable].[state_id] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Load AQI_NDS\OLE DB Destination"
-          TopLeft="523.636363636364,724.545454545455" />
         <EdgeLayout
-          Id="Package\Load AQI_NDS.Paths[Lookup Error Output]"
-          TopLeft="475.575757575758,663.818181818182">
+          Id="Package\Load AQI_NDS.Paths[Lookup Match Output]"
+          TopLeft="170.5,206">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="133.560606060606,60.7272727272727"
+              EndConnector="0,48"
               Start="0,0"
-              End="133.560606060606,53.2272727272727">
+              End="0,40.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.5744605588964" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.5744605588964"
-                    Point2="0,24.5744605588964"
-                    Point3="4,24.5744605588964" />
-                  <mssgle:LineSegment
-                    End="129.560606060606,24.5744605588964" />
-                  <mssgle:CubicBezierSegment
-                    Point1="129.560606060606,24.5744605588964"
-                    Point2="133.560606060606,24.5744605588964"
-                    Point3="133.560606060606,28.5744605588964" />
-                  <mssgle:LineSegment
-                    End="133.560606060606,53.2272727272727" />
+                    End="0,40.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="20.9139163115529,29.5744605588964,91.7327734375,11.609375"
+              BoundingBox="-48.19138671875,14.4453125,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -7111,25 +6795,12 @@ where [refTable].[state_id] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load STATES_NDS\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load STATES_NDS\Lookup">
+    design-time-name="Package\Load AQI_NDS\Lookup AQIentrySK in AQI">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -7139,7 +6810,7 @@ where [refTable].[state_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7147,38 +6818,12 @@ where [refTable].[state_id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load STATES_NDS\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load COUNTY_NDS\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load COUNTY_NDS\Lookup STATES_NDS">
+    design-time-name="Package\Load AQI_NDS\Lookup CountySK from COUNTIES_NDS">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -7188,7 +6833,7 @@ where [refTable].[state_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7196,30 +6841,7 @@ where [refTable].[state_id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load COUNTY_NDS\Lookup COUNTY_NDS">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load COUNTY_NDS\OLE DB Destination">
+    design-time-name="Package\Load AQI_NDS\COUNTIES_NDS">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7245,30 +6867,7 @@ where [refTable].[state_id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load AQI_NDS\Lookup CountySK from COUNTIES_NDS">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load AQI_NDS\COUNTIES_NDS">
+    design-time-name="Package\Load AQI_NDS\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7293,13 +6892,202 @@ where [refTable].[state_id] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load COUNTY_NDS">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Load COUNTY_NDS\OLE DB Command"
+          TopLeft="177,465" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load COUNTY_NDS\OLE DB Destination"
+          TopLeft="417,469" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Load COUNTY_NDS\Lookup STATES_NDS"
+          TopLeft="245,262" />
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Load COUNTY_NDS\Add SourceID"
+          TopLeft="258,164" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Load COUNTY_NDS\OLE DB Source"
+          TopLeft="259,51" />
+        <NodeLayout
+          Size="183,42"
+          Id="Package\Load COUNTY_NDS\Lookup COUNTY_NDS"
+          TopLeft="243,370" />
+        <EdgeLayout
+          Id="Package\Load COUNTY_NDS.Paths[Lookup Error Output]"
+          TopLeft="363.666666666667,412">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="138.833333333333,57"
+              Start="0,0"
+              End="138.833333333333,49.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.0964247020585" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.0964247020585"
+                    Point2="0,23.0964247020585"
+                    Point3="4,23.0964247020585" />
+                  <mssgle:LineSegment
+                    End="134.833333333333,23.0964247020585" />
+                  <mssgle:CubicBezierSegment
+                    Point1="134.833333333333,23.0964247020585"
+                    Point2="138.833333333333,23.0964247020585"
+                    Point3="138.833333333333,27.0964247020585" />
+                  <mssgle:LineSegment
+                    End="138.833333333333,49.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="23.5502799479167,28.0964247020585,91.7327734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load COUNTY_NDS.Paths[Derived Column Output]"
+          TopLeft="332.25,206">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56"
+              Start="0,0"
+              End="0,48.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load COUNTY_NDS.Paths[OLE DB Source Output]"
+          TopLeft="332,93">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,71"
+              Start="0,0"
+              End="0,63.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,63.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load COUNTY_NDS.Paths[Lookup Match Output1]"
+          TopLeft="305.333333333333,412">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-45.3333333333333,53"
+              Start="0,0"
+              End="-45.3333333333333,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.4756229685807" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.4756229685807"
+                    Point2="0,21.4756229685807"
+                    Point3="-4,21.4756229685807" />
+                  <mssgle:LineSegment
+                    End="-41.3333333333333,21.4756229685807" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-41.3333333333333,21.4756229685807"
+                    Point2="-45.3333333333333,21.4756229685807"
+                    Point3="-45.3333333333333,25.4756229685807" />
+                  <mssgle:LineSegment
+                    End="-45.3333333333333,45.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-70.8580533854167,26.4756229685807,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load COUNTY_NDS.Paths[Lookup Match Output]"
+          TopLeft="334.5,304">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,66"
+              Start="0,0"
+              End="0,58.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,58.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,23.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load AQI_NDS\Lookup AQIentrySK in AQI">
+    design-time-name="Package\Load COUNTY_NDS\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load COUNTY_NDS\Lookup STATES_NDS">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -7309,7 +7097,7 @@ where [refTable].[state_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7317,7 +7105,7 @@ where [refTable].[state_id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load AQI_NDS\OLE DB Destination">
+    design-time-name="Package\Load COUNTY_NDS\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7326,6 +7114,226 @@ where [refTable].[state_id] = ?</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load COUNTY_NDS\Lookup COUNTY_NDS">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load STATES_NDS">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Load STATES_NDS\OLE DB Command"
+          TopLeft="360,355" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load STATES_NDS\OLE DB Destination"
+          TopLeft="692,379" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Load STATES_NDS\OLE DB Source"
+          TopLeft="544,40" />
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Load STATES_NDS\Add SourceID"
+          TopLeft="550,152" />
+        <NodeLayout
+          Size="113,42"
+          Id="Package\Load STATES_NDS\Lookup"
+          TopLeft="565,255" />
+        <EdgeLayout
+          Id="Package\Load STATES_NDS.Paths[OLE DB Source Output]"
+          TopLeft="620.5,82">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,70"
+              Start="0,0"
+              End="0,62.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,62.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load STATES_NDS.Paths[Lookup No Match Output]"
+          TopLeft="639,297">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="138.5,82"
+              Start="0,0"
+              End="138.5,74.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.4869109947644" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.4869109947644"
+                    Point2="0,33.4869109947644"
+                    Point3="4,33.4869109947644" />
+                  <mssgle:LineSegment
+                    End="134.5,33.4869109947644" />
+                  <mssgle:CubicBezierSegment
+                    Point1="134.5,33.4869109947644"
+                    Point2="138.5,33.4869109947644"
+                    Point3="138.5,37.4869109947644" />
+                  <mssgle:LineSegment
+                    End="138.5,74.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="13.44361328125,38.4869109947644,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load STATES_NDS.Paths[Lookup Match Output]"
+          TopLeft="604,297">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-161,58"
+              Start="0,0"
+              End="-161,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.6858638743456" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.6858638743456"
+                    Point2="0,23.6858638743456"
+                    Point3="-4,23.6858638743456" />
+                  <mssgle:LineSegment
+                    End="-157,23.6858638743456" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-157,23.6858638743456"
+                    Point2="-161,23.6858638743456"
+                    Point3="-161,27.6858638743456" />
+                  <mssgle:LineSegment
+                    End="-161,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-128.69138671875,28.6858638743456,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load STATES_NDS.Paths[Derived Column Output]"
+          TopLeft="621.75,194">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61"
+              Start="0,0"
+              End="0,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load STATES_NDS\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load STATES_NDS\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load STATES_NDS\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

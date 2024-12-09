@@ -2,18 +2,23 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>BTTH_ETL</Name>
-    <LastWriteTime>2024-12-04T16:19:05.0819728Z</LastWriteTime>
+    <LastWriteTime>2024-12-09T15:58:23.1479953Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>SourcetoStage.dtsx</Name>
-      <LastWriteTime>2024-12-04T13:15:03.5754009Z</LastWriteTime>
+      <LastWriteTime>2024-12-09T16:18:28.9027368Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>StagetoNDS.dtsx</Name>
-      <LastWriteTime>2024-12-04T16:49:10.7080422Z</LastWriteTime>
+      <LastWriteTime>2024-12-09T16:14:38.0546841Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>NDStoDDS.dtsx</Name>
+      <LastWriteTime>2024-12-09T17:26:43.3497688Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

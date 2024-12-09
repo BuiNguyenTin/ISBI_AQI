@@ -8,7 +8,6 @@ GO
 --DROP TABLE AQI_NDS
 --Tao cac bang trong NDS
 CREATE TABLE AQI_NDS (
-
 	[AirDataSK] INT IDENTITY (1, 1),
 	[Date] datetime,
 	[AQI] INT,

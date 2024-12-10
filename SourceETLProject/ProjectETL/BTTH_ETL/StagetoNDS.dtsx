@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="24"
-  DTS:VersionGUID="{1DABFAA5-001C-47C0-9159-262AAB6A456B}">
+  DTS:VersionBuild="25"
+  DTS:VersionGUID="{229E07FB-603E-4592-8292-61D927AA7B6D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -6900,30 +6900,30 @@ where [refTable].[state_id] = ?</property>
         <NodeLayout
           Size="166,42"
           Id="Package\Load COUNTY_NDS\OLE DB Command"
-          TopLeft="177,465" />
+          TopLeft="179,446" />
         <NodeLayout
           Size="171,42"
           Id="Package\Load COUNTY_NDS\OLE DB Destination"
-          TopLeft="417,469" />
+          TopLeft="419,450" />
         <NodeLayout
           Size="179,42"
           Id="Package\Load COUNTY_NDS\Lookup STATES_NDS"
-          TopLeft="245,262" />
+          TopLeft="247,243" />
         <NodeLayout
           Size="144,42"
           Id="Package\Load COUNTY_NDS\Add SourceID"
-          TopLeft="258,164" />
+          TopLeft="260,145" />
         <NodeLayout
           Size="150,42"
           Id="Package\Load COUNTY_NDS\OLE DB Source"
-          TopLeft="259,51" />
+          TopLeft="261,32" />
         <NodeLayout
           Size="183,42"
           Id="Package\Load COUNTY_NDS\Lookup COUNTY_NDS"
-          TopLeft="243,370" />
+          TopLeft="245,351" />
         <EdgeLayout
           Id="Package\Load COUNTY_NDS.Paths[Lookup Error Output]"
-          TopLeft="363.666666666667,412">
+          TopLeft="365.666666666667,393">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6953,13 +6953,13 @@ where [refTable].[state_id] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="23.5502799479167,28.0964247020585,91.7327734375,11.609375"
+              BoundingBox="23.5502799479165,28.0964247020585,91.7327734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load COUNTY_NDS.Paths[Derived Column Output]"
-          TopLeft="332.25,206">
+          TopLeft="334.25,187">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6976,14 +6976,12 @@ where [refTable].[state_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load COUNTY_NDS.Paths[OLE DB Source Output]"
-          TopLeft="332,93">
+          TopLeft="334,74">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7000,14 +6998,12 @@ where [refTable].[state_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load COUNTY_NDS.Paths[Lookup Match Output1]"
-          TopLeft="305.333333333333,412">
+          TopLeft="307.333333333333,393">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7043,7 +7039,7 @@ where [refTable].[state_id] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load COUNTY_NDS.Paths[Lookup Match Output]"
-          TopLeft="334.5,304">
+          TopLeft="336.5,285">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7087,7 +7083,7 @@ where [refTable].[state_id] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -7097,7 +7093,7 @@ where [refTable].[state_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7123,7 +7119,7 @@ where [refTable].[state_id] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -7133,7 +7129,7 @@ where [refTable].[state_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7184,9 +7180,7 @@ where [refTable].[state_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7280,9 +7274,7 @@ where [refTable].[state_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7320,7 +7312,7 @@ where [refTable].[state_id] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -7330,7 +7322,7 @@ where [refTable].[state_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>

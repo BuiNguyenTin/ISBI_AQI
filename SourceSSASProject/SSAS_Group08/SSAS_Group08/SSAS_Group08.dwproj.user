@@ -3,7 +3,7 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>localhost</TargetServer>
+        <TargetServer>BNTIN\MSSQLSERVER_TIN</TargetServer>
         <TargetDatabase>SSAS_Group08</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>

@@ -1,19 +1,20 @@
 ﻿CREATE DATABASE DDS_ISBI
 GO
 USE DDS_ISBI
-use master 
-
+--use master 
 GO
 
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-select * from [DIM_STATES]
+
+--select * from [DIM_STATES]
 --drop TABLE [DIM_STATES]
 CREATE TABLE [DIM_STATES](
 	[StateSK] INT,
-	[State Code] INT,
+
+	[State Code] int,
 	[State Name] VARCHAR(50) NULL,
 	[Created] DATETIME NULL,
 	[Last Updated] DATETIME NULL,
@@ -24,12 +25,14 @@ CREATE TABLE [DIM_STATES](
 ) ON [PRIMARY]
 
 GO
-CREATE TABLE DIM_COUNTIES (
+CREATE TABLE [DIM_COUNTIES] (
 	[CountySK] int,
+
 	[county Name] varchar(255) NULL,
 	[county_ascii] varchar(225) NULL,
+	[County Code] int,
 	[county_full] varchar(225) NULL,
-	[county_flips] int NULL,
+	[county_fips] int NULL,
 	[population] int NULL,
 	[Created] datetime NULL,
     [Last Updated] datetime NULL,
@@ -44,9 +47,10 @@ GO
 ALTER TABLE [dbo].[DIM_COUNTIES] WITH CHECK ADD CONSTRAINT [FK_DIM_COUNTIES_DIM_STATES] FOREIGN KEY ([StateSK]) REFERENCES [dbo].[DIM_STATES] ([StateSK])
 
 GO
---drop TABLE [dbo].[DIM_DATE]
+--drop TABLE DIM_DATE
 CREATE TABLE [dbo].[DIM_DATE](
 	[DateSK] int IDENTITY(1,1),
+
 	[Day] int NULL,
 	[Month] int NULL,
 	[Quater] int NULL,
@@ -57,43 +61,45 @@ CREATE TABLE [dbo].[DIM_DATE](
 ) ON [PRIMARY]
 
 GO
-CREATE TABLE [dbo].[DIM_PARAMETER](
-	[ParameterSK] int IDENTITY (1,1),
-	[Defining Parameter] varchar(50),
+/*CREATE TABLE [dbo].[DIM_PARAMETER](
+	[ParameterSK] INT IDENTITY (1,1),
+
+	
 	[Created] datetime NUll,
 	[Last Updated] datetime NULL,
 
 	CONSTRAINT [PK_DIM_PARAMETER] PRIMARY KEY CLUSTERED ([ParameterSK] ASC)
 	WITH(PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY];
-
+*/
 GO
 CREATE TABLE [FACT_AQI](
 	[AirDataSK] int,
 	[DateSK] int,
 	[StateSK] int,
 	[CountySK] int,
-	[ParameterSK] int,
+	--[ParameterSK] int,
+
 	[AQI] int NULL,
-	[Category] varchar(50) NULL,
-	[Defining Site] varchar(50) NULL,
+	[Category] varchar(255) NULL,
+	[Defining Parameter] varchar(255), --
+	[Defining Site] varchar(255) NULL,
 	[Number Of Sites Reporting] int NULL,
 	[Created] DATETIME NULL,
 	[Last Updated] datetime NULL,
+	
 	CONSTRAINT [PK_FACT_AQI] PRIMARY KEY CLUSTERED ([AirDataSK] ASC)
 	WITH(PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY];
 GO
-
-
 ALTER TABLE [dbo].[FACT_AQI] WITH CHECK ADD CONSTRAINT [FK_FACT_AIRQUALITY_DIM_DATE] FOREIGN KEY ([DateSK])
 REFERENCES [dbo].[DIM_DATE] ([DateSK])
 
-
 -- Xóa khóa ngoại từ bảng FACT_AQI
-ALTER TABLE FACT_AQI
+/*ALTER TABLE FACT_AQI
 DROP CONSTRAINT [FK_FACT_AIRQUALITY_DIM_DATE];
 GO
+*/
 
 ALTER TABLE [dbo].[FACT_AQI] WITH CHECK ADD CONSTRAINT [FK_FACT_AIRQUALITY_DIM_STATES] FOREIGN KEY ([StateSK])
 REFERENCES [dbo].[DIM_STATES] ([StateSK])
@@ -102,12 +108,14 @@ GO
 ALTER TABLE [dbo].[FACT_AQI] WITH CHECK ADD CONSTRAINT [FK_FACT_AIRQUALITY_DIM_COUNTIES] FOREIGN KEY ([CountySK])
 REFERENCES [dbo].[DIM_COUNTIES] ([CountySK])
 GO
-
+/*
 ALTER TABLE [dbo].[FACT_AQI] WITH CHECK ADD CONSTRAINT [FK_FACT_AIRQUALITY_DIM_PARAMETER] FOREIGN KEY ([ParameterSK])
 REFERENCES [dbo].[DIM_PARAMETER] ([ParameterSK])
+*/
 GO
+
 --drop PROCEDURE AddDateTo_DIM_DATE
-CREATE or ALTER PROCEDURE AddDateTo_DIM_DATE
+CREATE PROCEDURE AddDateTo_DIM_DATE
 AS
 BEGIN
     DECLARE @reqStart_date datetime,
@@ -142,7 +150,7 @@ GO
 SELECT * FROM [dbo].[DIM_COUNTIES]
 SELECT * FROM [dbo].[DIM_STATES]
 SELECT * FROM [dbo].[DIM_DATE]
-SELECT * FROM [dbo].[DIM_PARAMETER]
+--SELECT * FROM [dbo].[DIM_PARAMETER]
 SELECT * FROM [dbo].[FACT_AQI]
 
 SELECT * FROM [NDS_ISBI].[dbo].[AQI_NDS] 

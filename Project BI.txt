@@ -1,0 +1,19 @@
+Defining site: cột thu dữ liệu có chất lượng xấu nhất được define ra 
+
+county fips: GG
+lat: kinh độ; Lng: vĩ độ
+
+đồ án nhóm: dl 22/12/24
+
+SSIS
+Report: DW, inside
+
+8 câu query (Có những câu điểm cộng ở dưới 9-12)
+
+không quá 50 trang 
+
+event log
+
+error handle
+
+tuần 6, 8, 10, 12 

@@ -1,0 +1,120 @@
+﻿--1.Min và Max của giá trị AQI cho mỗi bang trong từng quý của các năm
+WITH 
+  MEMBER [Measures].[Min AQI] AS MIN([Date].[Quarter].MEMBERS, [Measures].[AQI])
+  MEMBER [Measures].[Max AQI] AS MAX([Date].[Quarter].MEMBERS, [Measures].[AQI])
+SELECT 
+  { [Measures].[Min AQI], [Measures].[Max AQI] } ON COLUMNS,
+  { [State].[State Code].MEMBERS } ON ROWS
+FROM [AQI Measurements]
+WHERE [Date].[Quarter].MEMBERS
+
+
+--2.Mean và độ lệch chuẩn của giá trị AQI cho mỗi bang trong từng quý của các năm
+WITH 
+  MEMBER [Measures].[Mean AQI] AS AVG([Date].[Quarter].MEMBERS, [Measures].[AQI])
+  MEMBER [Measures].[Std Dev AQI] AS STDDEV([Date].[Quarter].MEMBERS, [Measures].[AQI])
+SELECT 
+  { [Measures].[Mean AQI], [Measures].[Std Dev AQI], [Measures].[Min AQI], [Measures].[Max AQI] } ON COLUMNS,
+  { [State].[State Code].MEMBERS } ON ROWS
+FROM [AQI Measurements]
+WHERE [Date].[Quarter].MEMBERS
+
+
+--3.Số ngày và giá trị AQI trung bình với chất lượng không khí được đánh giá là "rất không lành mạnh" hoặc tệ hơn
+WITH 
+  MEMBER [Measures].[Very Unhealthy Days] AS 
+    COUNT(
+      FILTER(
+        [Date].[Date].MEMBERS, 
+        [Measures].[AQI] > 200
+      )
+    )
+  MEMBER [Measures].[Mean Very Unhealthy AQI] AS 
+    AVG(
+      FILTER(
+        [Date].[Date].MEMBERS, 
+        [Measures].[AQI] > 200
+      ),
+      [Measures].[AQI]
+    )
+SELECT 
+  { [Measures].[Very Unhealthy Days], [Measures].[Mean Very Unhealthy AQI] } ON COLUMNS,
+  { [State].[State Code].MEMBERS * [County].[County Code].MEMBERS } ON ROWS
+FROM [AQI Measurements]
+
+
+--4.Số ngày trong mỗi hạng mục chất lượng không khí (Good, Moderate, etc.) cho các bang Hawaii, Alaska, Illinois và Delaware theo quận
+SELECT 
+  NON EMPTY { [Date].[Date].MEMBERS } ON COLUMNS,
+  { 
+    [State].[State Name].&[Hawaii], 
+    [State].[State Name].&[Alaska], 
+    [State].[State Name].&[Illinois], 
+    [State].[State Name].&[Delaware]
+  } * [County].[County Name].MEMBERS ON ROWS
+FROM [AQI Measurements]
+WHERE ( 
+  [AQI Category].[Category].MEMBERS
+)
+
+
+--5.Giá trị trung bình AQI theo quý cho các bang Hawaii, Alaska, Illinois và Delaware
+WITH 
+  MEMBER [Measures].[Mean AQI] AS AVG([Date].[Quarter].MEMBERS, [Measures].[AQI])
+SELECT 
+  { [Measures].[Mean AQI] } ON COLUMNS,
+  { 
+    [State].[State Name].&[Hawaii], 
+    [State].[State Name].&[Alaska], 
+    [State].[State Name].&[Illinois], 
+    [State].[State Name].&[Delaware]
+  } ON ROWS
+FROM [AQI Measurements]
+WHERE [Date].[Quarter].MEMBERS
+
+
+--6.Báo cáo về xu hướng biến động AQI trong năm cho các bang Hawaii, Alaska, Illinois và California
+WITH 
+  MEMBER [Measures].[AQI Trend] AS AVG([Date].[Quarter].MEMBERS, [Measures].[AQI])
+SELECT 
+  { [Measures].[AQI Trend] } ON COLUMNS,
+  { 
+    [State].[State Name].&[Hawaii], 
+    [State].[State Name].&[Alaska], 
+    [State].[State Name].&[Illinois], 
+    [State].[State Name].&[California]
+  } ON ROWS
+FROM [AQI Measurements]
+WHERE [Date].[Quarter].MEMBERS
+
+
+--*9.Báo cáo giá trị trung bình, độ lệch chuẩn, giá trị nhỏ nhất và lớn nhất của AQI theo từng bang và từng quận trong mỗi quý của năm.
+WITH 
+  MEMBER [Measures].[Mean AQI] AS AVG([Date].[Quarter].MEMBERS, [Measures].[AQI])
+  MEMBER [Measures].[Std Dev AQI] AS STDEV([Date].[Quarter].MEMBERS, [Measures].[AQI])
+  MEMBER [Measures].[Min AQI] AS MIN([Date].[Quarter].MEMBERS, [Measures].[AQI])
+  MEMBER [Measures].[Max AQI] AS MAX([Date].[Quarter].MEMBERS, [Measures].[AQI])
+SELECT 
+  { [Measures].[Mean AQI], [Measures].[Std Dev AQI], [Measures].[Min AQI], [Measures].[Max AQI] } ON COLUMNS,
+  { 
+    [State].[State Name].MEMBERS * [County].[County Name].MEMBERS * [Date].[Quarter].[Quarter].MEMBERS 
+  } ON ROWS
+FROM 
+  [AQI Cube]
+
+
+--10.Tạo một thuộc tính mới, DayLightSaving, trong một bảng thích hợp. DayLightSaving có thể có hai giá trị:
+--True: Giữa ngày 12 tháng 3 năm 2023 và ngày 5 tháng 11 năm 2023.
+--False: Ngoài khoảng thời gian trên.
+--Báo cáo giá trị trung bình AQI theo từng bang, loại chất lượng không khí (Category), và DayLightSaving qua các năm.
+WITH 
+  MEMBER [Measures].[Mean AQI] AS AVG([Date].[Year].MEMBERS, [Measures].[AQI])
+SELECT 
+  { [Measures].[Mean AQI] } ON COLUMNS,
+  { 
+    [State].[State Name].MEMBERS * [Category].[Category Name].MEMBERS * [Date].[DayLightSaving].MEMBERS * [Date].[Year].[Year].MEMBERS 
+  } ON ROWS
+FROM 
+  [AQI Cube]
+
+

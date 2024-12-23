@@ -1,0 +1,214 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="960797ad-dee0-4e50-999d-855d63c37d44" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DDS ISBI</ID>
+  <Name>DDS ISBI</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="b533bec8-0758-48cd-8a66-87f6decd82a6">
+      <ID>DIM COUNTIES</ID>
+      <Name>DIM COUNTIES</Name>
+      <DimensionID>DIM COUNTIES</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2bd42397-51a3-464f-b2f7-4545de169d62">
+          <AttributeID>County SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6c2e3987-f8be-4810-be53-9e50a85aa83f">
+          <AttributeID>State SK</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ae93dae3-328e-40cd-8238-0df40c725458">
+      <ID>DIM DATE</ID>
+      <Name>DIM DATE</Name>
+      <DimensionID>DIM DATE</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="38e58fac-1d88-4119-ac7d-8fca9c556051">
+          <AttributeID>Date SK</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="145ba6d2-9dfe-4589-a139-6e81c3c87b73">
+      <ID>DIM STATES</ID>
+      <Name>DIM STATES</Name>
+      <DimensionID>DIM STATES</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="79a468cd-8066-4af6-b501-1b9ffeeb3a96">
+          <AttributeID>State SK</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="deaefe70-9994-4bc6-9eea-742d4cbe8872">
+      <ID>DIM COUNTIES - State SK</ID>
+      <Name>DIM COUNTIES - State SK</Name>
+      <DimensionID>DIM STATES</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d07ee7a6-2b6e-461f-8a64-74958ad4a6fb">
+          <AttributeID>State SK</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="3ccfcced-cca9-4909-ba29-94572fd8714a">
+      <ID>FACT AQI</ID>
+      <Name>FACT AQI</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="5fbeb017-a6b6-4a69-a684-ae933e306c2e">
+          <ID>AQI</ID>
+          <Name>AQI</Name>
+          <Source dwd:design-time-name="bdbc8e32-b0b9-45d5-8ff0-f7414335266a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6f70fd54-4be2-4a69-a69a-7ab968071723">
+              <TableID>dbo_FACT_AQI</TableID>
+              <ColumnID>AQI</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="97de6f72-d72b-47a6-b5e8-34fef831baa6">
+          <ID>Number Of Sites Reporting</ID>
+          <Name>Number Of Sites Reporting</Name>
+          <Source dwd:design-time-name="da6ccb29-c3fe-4754-b895-6bf40324e110">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f65e8f35-9b45-43f4-945f-6049147401a1">
+              <TableID>dbo_FACT_AQI</TableID>
+              <ColumnID>Number_x0020_Of_x0020_Sites_x0020_Reporting</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="34ebb299-e236-42ad-ad61-eaf9da275f2a">
+          <ID>FACT AQI Count</ID>
+          <Name>FACT AQI Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="e59a75c8-77ee-4804-b4e2-15045937f023">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="99b25f4d-7ab5-4733-8ef7-85890e85ef94">
+              <TableID>dbo_FACT_AQI</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e0339cf1-39d6-461d-850d-7060b90b19db">
+          <CubeDimensionID>DIM COUNTIES</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="282735c1-fbec-41e9-9bd3-14baa09ef6f3">
+              <AttributeID>County SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="59bc236c-d312-41c6-bb30-ae8b2bead2a7">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9955afcd-4411-40ce-8e41-ff7851a5d7ad">
+                    <TableID>dbo_FACT_AQI</TableID>
+                    <ColumnID>CountySK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d99476cc-683e-4e8a-8fef-1fe825ad8edf">
+          <CubeDimensionID>DIM DATE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0cf95db5-bcef-4675-bf8b-06d287863fef">
+              <AttributeID>Date SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b67b84c3-98a8-4837-b76d-3c4f787a8bfb">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5eb5dc35-175e-4e19-8015-35dd49ef9943">
+                    <TableID>dbo_FACT_AQI</TableID>
+                    <ColumnID>DateSK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e36e2ec3-8e42-4293-86e1-15e44af62dd0">
+          <CubeDimensionID>DIM STATES</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a5cd5d76-76c0-4d6b-90b2-c99d7204e159">
+              <AttributeID>State SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c2d2edaf-47c4-41b9-b615-18c18a175d17">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7987bd25-a1b5-4213-9818-6e89b2272f96">
+                    <TableID>dbo_FACT_AQI</TableID>
+                    <ColumnID>StateSK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="4dc0dcf6-dcd0-44e3-8fc1-7590704f74f5">
+          <CubeDimensionID>DIM COUNTIES - State SK</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b7b6009b-51da-4f1d-aa89-3a708dad06bf">
+              <AttributeID>State SK</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>DIM COUNTIES</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>State SK</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="fd6f75d6-189e-4298-adc3-c92b01129ef9">
+    <DataSourceViewID>DDS ISBI</DataSourceViewID>
+  </Source>
+</Cube>

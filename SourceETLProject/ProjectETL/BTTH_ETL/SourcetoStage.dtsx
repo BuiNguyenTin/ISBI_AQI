@@ -11,8 +11,8 @@
   DTS:LocaleID="1066"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="31"
-  DTS:VersionGUID="{9E30EC72-43E7-48CE-BB0F-77F1804E98E7}">
+  DTS:VersionBuild="32"
+  DTS:VersionGUID="{2C7C0A66-A01B-4DC0-B3E3-BE069ACAF085}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -693,6 +693,18 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BNTIN.METADB_ISBI 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{84C071B6-E4F0-4B0E-8823-196067DE4829}"
+      DTS:ObjectName="BNTIN.METADB_ISBI 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=BNTIN;Initial Catalog=METADB_ISBI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{84C071B6-E4F0-4B0E-8823-196067DE4829}BNTIN.METADB_ISBI 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[BNTIN.STAGE]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{D08B538C-571A-4B01-8CB0-54A68A8A75B4}"
@@ -750,6 +762,66 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=BNTIN;Initial Catalog=STAGE_ISBI;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{EAFA2A26-88A3-4546-B546-C5D3425A9EEC}BNTIN.STAGE_ISBI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BNTIN.STAGE_ISBI 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{6AF4723B-01B1-4EEB-80C7-BD79387DA529}"
+      DTS:ObjectName="BNTIN.STAGE_ISBI 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=BNTIN;Initial Catalog=STAGE_ISBI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{6AF4723B-01B1-4EEB-80C7-BD79387DA529}BNTIN.STAGE_ISBI 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BNTIN.STAGE_ISBI 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{32AC9D75-E539-4198-A481-45192D755680}"
+      DTS:ObjectName="BNTIN.STAGE_ISBI 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=BNTIN;Initial Catalog=STAGE_ISBI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{32AC9D75-E539-4198-A481-45192D755680}BNTIN.STAGE_ISBI 2;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BNTIN.STAGE_ISBI 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B74D2250-EF72-4452-AAA9-63CD9BB56E43}"
+      DTS:ObjectName="BNTIN.STAGE_ISBI 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=BNTIN;Initial Catalog=STAGE_ISBI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{B74D2250-EF72-4452-AAA9-63CD9BB56E43}BNTIN.STAGE_ISBI 3;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BNTIN.STAGE_ISBI 4]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{4C7FA205-C270-425F-B98D-743B0005D4CB}"
+      DTS:ObjectName="BNTIN.STAGE_ISBI 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=BNTIN;Initial Catalog=STAGE_ISBI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{4C7FA205-C270-425F-B98D-743B0005D4CB}BNTIN.STAGE_ISBI 4;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BNTIN.STAGE_ISBI 5]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{CD54BEC8-30F3-4607-A40A-C4B31B90256B}"
+      DTS:ObjectName="BNTIN.STAGE_ISBI 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=BNTIN;Initial Catalog=STAGE_ISBI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{CD54BEC8-30F3-4607-A40A-C4B31B90256B}BNTIN.STAGE_ISBI 5;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -1964,6 +2036,262 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 18]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{6D2BF7EB-47BB-4EB6-9169-FE334BE9560D}"
+      DTS:ObjectName="Flat File Connection Manager 18">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1066"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1258"
+          DTS:ConnectionString="C:\Users\buing\Desktop\ISBI_AQI\SourceETLProject\Air_Quality_Data\2021_PJ.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="State Name"
+              DTS:DTSID="{2C1BA089-3034-48C1-8B70-CA01A22559BE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="county Name"
+              DTS:DTSID="{24CCDF51-438F-489C-BF42-0855C739A6DD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="State Code"
+              DTS:DTSID="{02FBC14A-5D32-43B7-99D5-935F1495D5DE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="County Code"
+              DTS:DTSID="{3AAEC7BC-1B68-4A65-BB89-30F9F72A51B3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{86ED44C0-17CE-40EC-A5C7-9CB744C9DC69}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AQI"
+              DTS:DTSID="{42BB526D-6AE6-4128-856F-F018B606F079}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Category"
+              DTS:DTSID="{059A3377-B9C0-41E8-B95B-AE305A58C094}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Defining Parameter"
+              DTS:DTSID="{8546E3AD-D647-4D14-BAA8-2D39DC76AC3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Defining Site"
+              DTS:DTSID="{FC3CF972-24A5-4865-9545-65C167B1AEF6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Number of Sites Reporting"
+              DTS:DTSID="{6619481D-FDA1-4DFD-BC1B-54557AF29480}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Created"
+              DTS:DTSID="{40AA5E07-A466-4B4D-9340-4C5687B7FE45}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Last Updated"
+              DTS:DTSID="{94CF5B06-8AA2-4356-9CDD-862FDE8E99A0}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 19]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{B2B733F5-049D-4FE2-B2F9-44A4C00EDF3D}"
+      DTS:ObjectName="Flat File Connection Manager 19">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1066"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1258"
+          DTS:ConnectionString="C:\Users\buing\Desktop\ISBI_AQI\SourceETLProject\Air_Quality_Data\2022_PJ.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="State Name"
+              DTS:DTSID="{C601CABD-3A59-45E6-AA30-71FB815AEE66}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="county Name"
+              DTS:DTSID="{FB0E0BA7-70F5-4D35-8FC7-5DCEBAB92EC6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="State Code"
+              DTS:DTSID="{088BAA56-8A26-45C6-897B-9F807C596F9E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="County Code"
+              DTS:DTSID="{14DF28E2-D6D6-4B62-86F2-2EA8A259FBFD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{BD76DEE7-B760-41DB-84A0-02BE06FD7FA9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AQI"
+              DTS:DTSID="{D5DC116F-C82B-42D6-8F05-7D5664F473CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Category"
+              DTS:DTSID="{689F2867-C16F-45B8-9873-2CEAC2A5E991}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Defining Parameter"
+              DTS:DTSID="{D5639269-2A20-4C66-BC75-2810B788B4CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Defining Site"
+              DTS:DTSID="{44C10D05-941B-487A-B42E-FCDFDF3685CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Number of Sites Reporting"
+              DTS:DTSID="{0BB70F92-DB92-4CA4-A8FD-46740D5CD45C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Created"
+              DTS:DTSID="{120C5A0B-A0BA-445B-A4AD-D73F5FDC6AE0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Last Updated"
+              DTS:DTSID="{2489A1FD-C8E4-4F98-81EA-5B34B4931ECD}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{75A45E18-6A41-4B6F-8583-CDC1AD535DF6}"
@@ -2086,6 +2414,235 @@
               DTS:TextQualified="True"
               DTS:ObjectName="Last Updated"
               DTS:DTSID="{F31201A1-2197-4483-934D-2892BCF8F775}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 20]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{2C4CC18A-71FB-42C5-9549-DEE8849EF442}"
+      DTS:ObjectName="Flat File Connection Manager 20">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1066"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1258"
+          DTS:ConnectionString="C:\Users\buing\Desktop\ISBI_AQI\SourceETLProject\Air_Quality_Data\2023_PJ.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="State Name"
+              DTS:DTSID="{12A3C68F-02A0-4F41-BB3A-66933F55499C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="county Name"
+              DTS:DTSID="{5FCFA7EF-B313-4A03-BDE0-C056F12449F0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="State Code"
+              DTS:DTSID="{60407BFD-A1F3-4659-AE6E-F9AA59F884AF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="County Code"
+              DTS:DTSID="{FE6619DD-8C4D-4F57-AFFB-74FEA1529FE9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{F9615B88-E6CB-4AE8-8440-3E4BEB495C05}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AQI"
+              DTS:DTSID="{9997965E-8704-45F3-8B77-617112E4BCF8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Category"
+              DTS:DTSID="{14EB5C5D-4D6D-4059-B8F6-79D0B3373461}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Defining Parameter"
+              DTS:DTSID="{34C7C878-588A-431D-AD95-89FD149921F0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Defining Site"
+              DTS:DTSID="{51FEB2F6-8EE0-415B-B1BD-41FB9DF6E2B6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Number of Sites Reporting"
+              DTS:DTSID="{B509B5C3-D606-4E9B-94DA-5C625AE86CBC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Created"
+              DTS:DTSID="{ACF21E7B-9201-449A-8B68-E6908F00F66C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Last Updated"
+              DTS:DTSID="{3B2C354B-7B31-45F0-95A9-36491E7A7E40}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 21]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{9C0D20FE-9426-49D1-AF4C-E792F3E24B13}"
+      DTS:ObjectName="Flat File Connection Manager 21">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1066"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1258"
+          DTS:ConnectionString="C:\Users\buing\Desktop\ISBI_AQI\SourceETLProject\Air_Quality_Data\uscounties.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="county"
+              DTS:DTSID="{8D7CC6B8-61BD-411F-9BB0-28B79E2B0F81}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="county_ascii"
+              DTS:DTSID="{AAC4D23F-EC08-4BBD-B174-173C33015083}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="county_full"
+              DTS:DTSID="{4F86F900-8E65-4BA2-909E-6076D46158BC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="county_fips"
+              DTS:DTSID="{54415E1A-9C38-47F7-9FDA-F005247861EF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state_id"
+              DTS:DTSID="{EB49C364-295F-46E0-93DA-E9E04304D260}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state_name"
+              DTS:DTSID="{02B72641-2055-4362-B01E-79906A26845F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="lat"
+              DTS:DTSID="{D3FDDCBA-DE7D-4A97-BF2F-9905F944F86B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="lng"
+              DTS:DTSID="{AF7D138E-5A1E-4103-8FD6-DEE12403103A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="population"
+              DTS:DTSID="{8ADC8514-1334-4412-9041-791CFCE91DAB}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -3288,7 +3845,7 @@
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="1033"
+              localeId="1066"
               name="2021_AQI"
               usesDispositions="true"
               version="1">
@@ -3305,8 +3862,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[2021_PJ]"
-                  connectionManagerRefId="Package.ConnectionManagers[2021_PJ]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 18]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 18]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -3316,7 +3873,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].Columns[State Name]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3338,7 +3895,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].Columns[county Name]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3360,7 +3917,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].Columns[State Code]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3382,7 +3939,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].Columns[County Code]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3404,7 +3961,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].Columns[Date]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3426,7 +3983,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].Columns[AQI]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3448,7 +4005,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].Columns[Category]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3470,7 +4027,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].Columns[Defining Parameter]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3492,7 +4049,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].Columns[Defining Site]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3514,7 +4071,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].Columns[Number of Sites Reporting]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3536,7 +4093,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].Columns[Created]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3558,7 +4115,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].Columns[Last Updated]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3583,73 +4140,73 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].ExternalColumns[State Name]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="State Name" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].ExternalColumns[county Name]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="county Name" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].ExternalColumns[State Code]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="State Code" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].ExternalColumns[County Code]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="County Code" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].ExternalColumns[Date]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Date" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].ExternalColumns[AQI]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="AQI" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].ExternalColumns[Category]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Category" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].ExternalColumns[Defining Parameter]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Defining Parameter" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].ExternalColumns[Defining Site]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Defining Site" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].ExternalColumns[Number of Sites Reporting]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Number of Sites Reporting" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].ExternalColumns[Created]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Created" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2021_AQI.Outputs[Flat File Source Output].ExternalColumns[Last Updated]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Last Updated" />
@@ -3689,7 +4246,7 @@
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="1033"
+              localeId="1066"
               name="2022_AQI"
               usesDispositions="true"
               version="1">
@@ -3706,8 +4263,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 15]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 15]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 19]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 19]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -3717,7 +4274,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[State Name]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3739,7 +4296,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[county Name]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3761,7 +4318,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[State Code]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3783,7 +4340,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[County Code]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3805,7 +4362,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Date]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3827,7 +4384,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[AQI]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3849,7 +4406,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Category]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3871,7 +4428,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Defining Parameter]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3893,7 +4450,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Defining Site]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3915,7 +4472,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Number of Sites Reporting]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3937,7 +4494,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Created]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3959,7 +4516,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Last Updated]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -3984,73 +4541,73 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].ExternalColumns[State Name]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="State Name" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].ExternalColumns[county Name]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="county Name" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].ExternalColumns[State Code]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="State Code" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].ExternalColumns[County Code]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="County Code" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].ExternalColumns[Date]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Date" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].ExternalColumns[AQI]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="AQI" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].ExternalColumns[Category]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Category" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].ExternalColumns[Defining Parameter]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Defining Parameter" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].ExternalColumns[Defining Site]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Defining Site" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].ExternalColumns[Number of Sites Reporting]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Number of Sites Reporting" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].ExternalColumns[Created]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Created" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].ExternalColumns[Last Updated]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Last Updated" />
@@ -4090,7 +4647,7 @@
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="1033"
+              localeId="1066"
               name="2023_AQI"
               usesDispositions="true"
               version="1">
@@ -4107,8 +4664,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 16]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 16]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 20]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 20]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -4118,7 +4675,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].Columns[State Name]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -4140,7 +4697,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].Columns[county Name]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -4162,7 +4719,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].Columns[State Code]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -4184,7 +4741,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].Columns[County Code]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -4206,7 +4763,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].Columns[Date]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -4228,7 +4785,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].Columns[AQI]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -4250,7 +4807,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].Columns[Category]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -4272,7 +4829,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].Columns[Defining Parameter]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -4294,7 +4851,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].Columns[Defining Site]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -4316,7 +4873,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].Columns[Number of Sites Reporting]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -4338,7 +4895,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].Columns[Created]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -4360,7 +4917,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].Columns[Last Updated]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -4385,73 +4942,73 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].ExternalColumns[State Name]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="State Name" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].ExternalColumns[county Name]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="county Name" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].ExternalColumns[State Code]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="State Code" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].ExternalColumns[County Code]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="County Code" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].ExternalColumns[Date]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Date" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].ExternalColumns[AQI]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="AQI" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].ExternalColumns[Category]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Category" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].ExternalColumns[Defining Parameter]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Defining Parameter" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].ExternalColumns[Defining Site]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Defining Site" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].ExternalColumns[Number of Sites Reporting]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Number of Sites Reporting" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].ExternalColumns[Created]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Created" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\2023_AQI.Outputs[Flat File Source Output].ExternalColumns[Last Updated]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="Last Updated" />
@@ -4734,7 +5291,7 @@
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
+                  name="DefaultCodePage">1258</property>
                 <property
                   dataType="System.Boolean"
                   description="Forces the use of the DefaultCodePage property value when describing character data."
@@ -4764,8 +5321,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Source AIRQUALITY\AIR_QUALITY_STAGE.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.STAGE_ISBI]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.STAGE_ISBI]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.STAGE_ISBI 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.STAGE_ISBI 4]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4779,7 +5336,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Data Flow Source AIRQUALITY\AIR_QUALITY_STAGE.Inputs[OLE DB Destination Input].Columns[State Name]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="State Name"
@@ -4787,7 +5344,7 @@
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[State Name]" />
                     <inputColumn
                       refId="Package\Data Flow Source AIRQUALITY\AIR_QUALITY_STAGE.Inputs[OLE DB Destination Input].Columns[county Name]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="county Name"
@@ -4795,7 +5352,7 @@
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[county Name]" />
                     <inputColumn
                       refId="Package\Data Flow Source AIRQUALITY\AIR_QUALITY_STAGE.Inputs[OLE DB Destination Input].Columns[State Code]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="State Code"
@@ -4803,7 +5360,7 @@
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[State Code]" />
                     <inputColumn
                       refId="Package\Data Flow Source AIRQUALITY\AIR_QUALITY_STAGE.Inputs[OLE DB Destination Input].Columns[County Code]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="County Code"
@@ -4811,7 +5368,7 @@
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[County Code]" />
                     <inputColumn
                       refId="Package\Data Flow Source AIRQUALITY\AIR_QUALITY_STAGE.Inputs[OLE DB Destination Input].Columns[AQI]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="AQI"
@@ -4819,7 +5376,7 @@
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[AQI]" />
                     <inputColumn
                       refId="Package\Data Flow Source AIRQUALITY\AIR_QUALITY_STAGE.Inputs[OLE DB Destination Input].Columns[Category]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Category"
@@ -4827,7 +5384,7 @@
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Category]" />
                     <inputColumn
                       refId="Package\Data Flow Source AIRQUALITY\AIR_QUALITY_STAGE.Inputs[OLE DB Destination Input].Columns[Defining Parameter]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Defining Parameter"
@@ -4835,7 +5392,7 @@
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Defining Parameter]" />
                     <inputColumn
                       refId="Package\Data Flow Source AIRQUALITY\AIR_QUALITY_STAGE.Inputs[OLE DB Destination Input].Columns[Defining Site]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Defining Site"
@@ -4843,7 +5400,7 @@
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Defining Site]" />
                     <inputColumn
                       refId="Package\Data Flow Source AIRQUALITY\AIR_QUALITY_STAGE.Inputs[OLE DB Destination Input].Columns[Number of Sites Reporting]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Number of Sites Reporting"
@@ -4851,7 +5408,7 @@
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Number of Sites Reporting]" />
                     <inputColumn
                       refId="Package\Data Flow Source AIRQUALITY\AIR_QUALITY_STAGE.Inputs[OLE DB Destination Input].Columns[Created]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Created"
@@ -4859,7 +5416,7 @@
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Created]" />
                     <inputColumn
                       refId="Package\Data Flow Source AIRQUALITY\AIR_QUALITY_STAGE.Inputs[OLE DB Destination Input].Columns[Last Updated]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Last Updated"
@@ -4867,7 +5424,7 @@
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Last Updated]" />
                     <inputColumn
                       refId="Package\Data Flow Source AIRQUALITY\AIR_QUALITY_STAGE.Inputs[OLE DB Destination Input].Columns[Date]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Date"
@@ -4884,13 +5441,13 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\AIR_QUALITY_STAGE.Inputs[OLE DB Destination Input].ExternalColumns[State Name]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="State Name" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\AIR_QUALITY_STAGE.Inputs[OLE DB Destination Input].ExternalColumns[county Name]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="255"
                       name="county Name" />
@@ -4912,19 +5469,19 @@
                       name="AQI" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\AIR_QUALITY_STAGE.Inputs[OLE DB Destination Input].ExternalColumns[Category]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="255"
                       name="Category" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\AIR_QUALITY_STAGE.Inputs[OLE DB Destination Input].ExternalColumns[Defining Parameter]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="255"
                       name="Defining Parameter" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source AIRQUALITY\AIR_QUALITY_STAGE.Inputs[OLE DB Destination Input].ExternalColumns[Defining Site]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="255"
                       name="Defining Site" />
@@ -4986,7 +5543,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Data Flow Source AIRQUALITY\Date.Inputs[Data Conversion Input].Columns[Date]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Date"
@@ -5058,13 +5615,12 @@
               version="1">
               <inputs>
                 <input
-                  refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 4]"
-                  hasSideEffects="true"
-                  name="Union All Input 4">
+                  refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 4].Columns[State Name]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[State Name]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="State Name"
@@ -5078,8 +5634,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 4].Columns[county Name]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[county Name]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="county Name"
@@ -5093,8 +5649,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 4].Columns[State Code]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[State Code]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="State Code"
@@ -5108,8 +5664,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 4].Columns[County Code]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[County Code]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="County Code"
@@ -5123,8 +5679,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 4].Columns[Date]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[Date]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Date"
@@ -5138,8 +5694,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 4].Columns[AQI]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[AQI]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="AQI"
@@ -5153,8 +5709,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 4].Columns[Category]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[Category]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Category"
@@ -5168,8 +5724,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 4].Columns[Defining Parameter]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[Defining Parameter]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Defining Parameter"
@@ -5183,8 +5739,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 4].Columns[Defining Site]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[Defining Site]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Defining Site"
@@ -5198,8 +5754,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 4].Columns[Number of Sites Reporting]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[Number of Sites Reporting]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Number of Sites Reporting"
@@ -5213,8 +5769,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 4].Columns[Created]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[Created]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Created"
@@ -5228,8 +5784,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 4].Columns[Last Updated]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[Last Updated]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Last Updated"
@@ -5243,211 +5799,10 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 4].Columns[SourceID]"
-                      cachedDataType="i4"
-                      cachedName="SourceID"
-                      lineageId="Package\Data Flow Source AIRQUALITY\Add SourceID 2021.Outputs[Derived Column Output].Columns[SourceID]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[SourceID]}</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-                <input
-                  refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1]"
-                  hasSideEffects="true"
-                  name="Union All Input 1">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[State Name]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="State Name"
-                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[State Name]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[State Name]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[county Name]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="county Name"
-                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[county Name]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[county Name]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[State Code]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="State Code"
-                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[State Code]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[State Code]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[County Code]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="County Code"
-                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[County Code]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[County Code]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[Date]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Date"
-                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Date]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Date]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[AQI]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="AQI"
-                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[AQI]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[AQI]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[Category]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Category"
-                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Category]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Category]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[Defining Parameter]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Defining Parameter"
-                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Defining Parameter]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Defining Parameter]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[Defining Site]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Defining Site"
-                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Defining Site]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Defining Site]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[Number of Sites Reporting]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Number of Sites Reporting"
-                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Number of Sites Reporting]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Number of Sites Reporting]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[Created]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Created"
-                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Created]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Created]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[Last Updated]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Last Updated"
-                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Last Updated]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Last Updated]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
                       refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1].Columns[SourceID]"
                       cachedDataType="i4"
                       cachedName="SourceID"
-                      lineageId="Package\Data Flow Source AIRQUALITY\Add SourceID 2022.Outputs[Derived Column Output].Columns[SourceID]">
+                      lineageId="Package\Data Flow Source AIRQUALITY\Add SourceID 2021.Outputs[Derived Column Output].Columns[SourceID]">
                       <properties>
                         <property
                           containsID="true"
@@ -5466,7 +5821,208 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[State Name]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="State Name"
+                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[State Name]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[State Name]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[county Name]"
+                      cachedCodepage="1258"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="county Name"
+                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[county Name]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[county Name]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[State Code]"
+                      cachedCodepage="1258"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="State Code"
+                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[State Code]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[State Code]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[County Code]"
+                      cachedCodepage="1258"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="County Code"
+                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[County Code]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[County Code]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[Date]"
+                      cachedCodepage="1258"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Date"
+                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Date]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Date]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[AQI]"
+                      cachedCodepage="1258"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="AQI"
+                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[AQI]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[AQI]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[Category]"
+                      cachedCodepage="1258"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Category"
+                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Category]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Category]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[Defining Parameter]"
+                      cachedCodepage="1258"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Defining Parameter"
+                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Defining Parameter]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Defining Parameter]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[Defining Site]"
+                      cachedCodepage="1258"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Defining Site"
+                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Defining Site]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Defining Site]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[Number of Sites Reporting]"
+                      cachedCodepage="1258"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Number of Sites Reporting"
+                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Number of Sites Reporting]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Number of Sites Reporting]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[Created]"
+                      cachedCodepage="1258"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Created"
+                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Created]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Created]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[Last Updated]"
+                      cachedCodepage="1258"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Last Updated"
+                      lineageId="Package\Data Flow Source AIRQUALITY\2022_AQI.Outputs[Flat File Source Output].Columns[Last Updated]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Last Updated]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[SourceID]"
+                      cachedDataType="i4"
+                      cachedName="SourceID"
+                      lineageId="Package\Data Flow Source AIRQUALITY\Add SourceID 2022.Outputs[Derived Column Output].Columns[SourceID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[SourceID]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 3]"
+                  hasSideEffects="true"
+                  name="Union All Input 3">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 3].Columns[State Name]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="State Name"
@@ -5480,8 +6036,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[county Name]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 3].Columns[county Name]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="county Name"
@@ -5495,8 +6051,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[State Code]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 3].Columns[State Code]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="State Code"
@@ -5510,8 +6066,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[County Code]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 3].Columns[County Code]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="County Code"
@@ -5525,8 +6081,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[Date]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 3].Columns[Date]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Date"
@@ -5540,8 +6096,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[AQI]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 3].Columns[AQI]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="AQI"
@@ -5555,8 +6111,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[Category]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 3].Columns[Category]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Category"
@@ -5570,8 +6126,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[Defining Parameter]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 3].Columns[Defining Parameter]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Defining Parameter"
@@ -5585,8 +6141,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[Defining Site]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 3].Columns[Defining Site]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Defining Site"
@@ -5600,8 +6156,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[Number of Sites Reporting]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 3].Columns[Number of Sites Reporting]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Number of Sites Reporting"
@@ -5615,8 +6171,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[Created]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 3].Columns[Created]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Created"
@@ -5630,8 +6186,8 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[Last Updated]"
-                      cachedCodepage="1252"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 3].Columns[Last Updated]"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Last Updated"
@@ -5645,7 +6201,7 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2].Columns[SourceID]"
+                      refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 3].Columns[SourceID]"
                       cachedDataType="i4"
                       cachedName="SourceID"
                       lineageId="Package\Data Flow Source AIRQUALITY\Add SourceID 2023.Outputs[Derived Column Output].Columns[SourceID]">
@@ -5661,10 +6217,10 @@
                   <externalMetadataColumns />
                 </input>
                 <input
-                  refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 3]"
+                  refId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 4]"
                   dangling="true"
                   hasSideEffects="true"
-                  name="Union All Input 3">
+                  name="Union All Input 4">
                   <externalMetadataColumns />
                 </input>
               </inputs>
@@ -5675,84 +6231,84 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[State Name]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[State Name]"
                       name="State Name" />
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[county Name]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[county Name]"
                       name="county Name" />
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[State Code]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[State Code]"
                       name="State Code" />
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[County Code]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[County Code]"
                       name="County Code" />
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Date]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Date]"
                       name="Date" />
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[AQI]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[AQI]"
                       name="AQI" />
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Category]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Category]"
                       name="Category" />
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Defining Parameter]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Defining Parameter]"
                       name="Defining Parameter" />
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Defining Site]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Defining Site]"
                       name="Defining Site" />
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Number of Sites Reporting]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Number of Sites Reporting]"
                       name="Number of Sites Reporting" />
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Created]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Created]"
                       name="Created" />
                     <outputColumn
                       refId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Last Updated]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       lineageId="Package\Data Flow Source AIRQUALITY\Union All.Outputs[Union All Output 1].Columns[Last Updated]"
@@ -5776,17 +6332,17 @@
               startId="Package\Data Flow Source AIRQUALITY\Date.Outputs[Data Conversion Output]" />
             <path
               refId="Package\Data Flow Source AIRQUALITY.Paths[Derived Column Output]"
-              endId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 4]"
+              endId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1]"
               name="Derived Column Output"
               startId="Package\Data Flow Source AIRQUALITY\Add SourceID 2021.Outputs[Derived Column Output]" />
             <path
               refId="Package\Data Flow Source AIRQUALITY.Paths[Derived Column Output1]"
-              endId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 1]"
+              endId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2]"
               name="Derived Column Output"
               startId="Package\Data Flow Source AIRQUALITY\Add SourceID 2022.Outputs[Derived Column Output]" />
             <path
               refId="Package\Data Flow Source AIRQUALITY.Paths[Derived Column Output2]"
-              endId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 2]"
+              endId="Package\Data Flow Source AIRQUALITY\Union All.Inputs[Union All Input 3]"
               name="Derived Column Output"
               startId="Package\Data Flow Source AIRQUALITY\Add SourceID 2023.Outputs[Derived Column Output]" />
             <path
@@ -5927,7 +6483,7 @@
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="1033"
+              localeId="1066"
               name="uscounties"
               usesDispositions="true"
               version="1">
@@ -5944,8 +6500,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Source USCOUNTY\uscounties.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 17]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 17]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 21]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 21]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -5955,7 +6511,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].Columns[county]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -5977,7 +6533,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].Columns[county_ascii]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -5999,7 +6555,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].Columns[county_full]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -6021,7 +6577,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].Columns[county_fips]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -6043,7 +6599,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].Columns[state_id]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -6065,7 +6621,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].Columns[state_name]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -6087,7 +6643,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].Columns[lat]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -6109,7 +6665,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].Columns[lng]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -6131,7 +6687,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].Columns[population]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
@@ -6156,55 +6712,55 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].ExternalColumns[county]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="county" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].ExternalColumns[county_ascii]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="county_ascii" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].ExternalColumns[county_full]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="county_full" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].ExternalColumns[county_fips]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="county_fips" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].ExternalColumns[state_id]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="state_id" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].ExternalColumns[state_name]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="state_name" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].ExternalColumns[lat]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="lat" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].ExternalColumns[lng]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="lng" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].ExternalColumns[population]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="population" />
@@ -6268,7 +6824,7 @@
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
+                  name="DefaultCodePage">1258</property>
                 <property
                   dataType="System.Boolean"
                   description="Forces the use of the DefaultCodePage property value when describing character data."
@@ -6298,8 +6854,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Source USCOUNTY\USCOUTIES_STAGE.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.STAGE_ISBI]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.STAGE_ISBI]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.STAGE_ISBI 5]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.STAGE_ISBI 5]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -6313,7 +6869,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Data Flow Source USCOUNTY\USCOUTIES_STAGE.Inputs[OLE DB Destination Input].Columns[county]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="county"
@@ -6321,7 +6877,7 @@
                       lineageId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].Columns[county]" />
                     <inputColumn
                       refId="Package\Data Flow Source USCOUNTY\USCOUTIES_STAGE.Inputs[OLE DB Destination Input].Columns[county_ascii]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="county_ascii"
@@ -6329,7 +6885,7 @@
                       lineageId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].Columns[county_ascii]" />
                     <inputColumn
                       refId="Package\Data Flow Source USCOUNTY\USCOUTIES_STAGE.Inputs[OLE DB Destination Input].Columns[county_full]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="county_full"
@@ -6337,7 +6893,7 @@
                       lineageId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].Columns[county_full]" />
                     <inputColumn
                       refId="Package\Data Flow Source USCOUNTY\USCOUTIES_STAGE.Inputs[OLE DB Destination Input].Columns[state_id]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="state_id"
@@ -6345,7 +6901,7 @@
                       lineageId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].Columns[state_id]" />
                     <inputColumn
                       refId="Package\Data Flow Source USCOUNTY\USCOUTIES_STAGE.Inputs[OLE DB Destination Input].Columns[state_name]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="state_name"
@@ -6353,7 +6909,7 @@
                       lineageId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].Columns[state_name]" />
                     <inputColumn
                       refId="Package\Data Flow Source USCOUNTY\USCOUTIES_STAGE.Inputs[OLE DB Destination Input].Columns[lat]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="lat"
@@ -6361,7 +6917,7 @@
                       lineageId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].Columns[lat]" />
                     <inputColumn
                       refId="Package\Data Flow Source USCOUNTY\USCOUTIES_STAGE.Inputs[OLE DB Destination Input].Columns[lng]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="lng"
@@ -6369,7 +6925,7 @@
                       lineageId="Package\Data Flow Source USCOUNTY\uscounties.Outputs[Flat File Source Output].Columns[lng]" />
                     <inputColumn
                       refId="Package\Data Flow Source USCOUNTY\USCOUTIES_STAGE.Inputs[OLE DB Destination Input].Columns[population]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="population"
@@ -6389,7 +6945,7 @@
                       lineageId="Package\Data Flow Source USCOUNTY\Add Created, LastUpdated.Outputs[Derived Column Output].Columns[Last Updated]" />
                     <inputColumn
                       refId="Package\Data Flow Source USCOUNTY\USCOUTIES_STAGE.Inputs[OLE DB Destination Input].Columns[county_fips]"
-                      cachedCodepage="1252"
+                      cachedCodepage="1258"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="county_fips"
@@ -6400,31 +6956,31 @@
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Data Flow Source USCOUNTY\USCOUTIES_STAGE.Inputs[OLE DB Destination Input].ExternalColumns[county]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="county" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source USCOUNTY\USCOUTIES_STAGE.Inputs[OLE DB Destination Input].ExternalColumns[county_ascii]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="225"
                       name="county_ascii" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source USCOUNTY\USCOUTIES_STAGE.Inputs[OLE DB Destination Input].ExternalColumns[county_full]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="225"
                       name="county_full" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source USCOUNTY\USCOUTIES_STAGE.Inputs[OLE DB Destination Input].ExternalColumns[state_id]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="50"
                       name="state_id" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Source USCOUNTY\USCOUTIES_STAGE.Inputs[OLE DB Destination Input].ExternalColumns[state_name]"
-                      codePage="1252"
+                      codePage="1258"
                       dataType="str"
                       length="225"
                       name="state_name" />
@@ -6508,7 +7064,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{4DCE4B28-D89C-4612-9FD7-CC0EBE0D4AEE}"
+          SQLTask:Connection="{84C071B6-E4F0-4B0E-8823-196067DE4829}"
           SQLTask:SqlStatementSource="UPDATE DATA_FLOW SET CET=GETDATE() WHERE NAME = 'AIR_QUALITY'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -6524,7 +7080,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{4DCE4B28-D89C-4612-9FD7-CC0EBE0D4AEE}"
+          SQLTask:Connection="{84C071B6-E4F0-4B0E-8823-196067DE4829}"
           SQLTask:SqlStatementSource="UPDATE DATA_FLOW SET CET=GETDATE() WHERE NAME = 'USCOUNTIES'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -6540,7 +7096,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{4DCE4B28-D89C-4612-9FD7-CC0EBE0D4AEE}"
+          SQLTask:Connection="{84C071B6-E4F0-4B0E-8823-196067DE4829}"
           SQLTask:SqlStatementSource="UPDATE DATA_FLOW SET LSET=GETDATE() WHERE NAME='AIR_QUALITY'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -6556,7 +7112,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{4DCE4B28-D89C-4612-9FD7-CC0EBE0D4AEE}"
+          SQLTask:Connection="{84C071B6-E4F0-4B0E-8823-196067DE4829}"
           SQLTask:SqlStatementSource="UPDATE DATA_FLOW SET LSET=GETDATE() WHERE NAME='USCOUNTIES'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -6572,7 +7128,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{4DCE4B28-D89C-4612-9FD7-CC0EBE0D4AEE}"
+          SQLTask:Connection="{84C071B6-E4F0-4B0E-8823-196067DE4829}"
           SQLTask:SqlStatementSource="SELECT LSET, CET FROM DATA_FLOW WHERE NAME = 'AIR_QUALITY'"
           SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ResultBinding
@@ -6596,7 +7152,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{4DCE4B28-D89C-4612-9FD7-CC0EBE0D4AEE}"
+          SQLTask:Connection="{84C071B6-E4F0-4B0E-8823-196067DE4829}"
           SQLTask:SqlStatementSource="SELECT LSET, CET FROM DATA_FLOW WHERE NAME = 'USCOUNTIES'"
           SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ResultBinding
@@ -6620,7 +7176,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{EAFA2A26-88A3-4546-B546-C5D3425A9EEC}"
+          SQLTask:Connection="{6AF4723B-01B1-4EEB-80C7-BD79387DA529}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE AIR_QUALITY_STAGE" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -6636,7 +7192,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{EAFA2A26-88A3-4546-B546-C5D3425A9EEC}"
+          SQLTask:Connection="{CD54BEC8-30F3-4607-A40A-C4B31B90256B}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE USCOUNTIES_STAGE" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -6952,35 +7508,87 @@
           Id="Package\Data Flow Source AIRQUALITY\AIR_QUALITY_STAGE"
           TopLeft="305.499989171823,450.60000126044" />
         <NodeLayout
+          Size="170,42"
+          Id="Package\Data Flow Source AIRQUALITY\Add SourceID 2022"
+          TopLeft="305,133" />
+        <NodeLayout
           Size="126,42"
           Id="Package\Data Flow Source AIRQUALITY\2022_AQI"
           TopLeft="331.499978045624,51.2666669628355" />
-        <NodeLayout
-          Size="121,42"
-          Id="Package\Data Flow Source AIRQUALITY\Union All"
-          TopLeft="330,245" />
         <NodeLayout
           Size="101,42"
           Id="Package\Data Flow Source AIRQUALITY\Date"
           TopLeft="339,345" />
         <NodeLayout
+          Size="170,42"
+          Id="Package\Data Flow Source AIRQUALITY\Add SourceID 2023"
+          TopLeft="502,134.60000126044" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Data Flow Source AIRQUALITY\Add SourceID 2021"
+          TopLeft="117,131" />
+        <NodeLayout
           Size="126,42"
           Id="Package\Data Flow Source AIRQUALITY\2021_AQI"
           TopLeft="140.83332217402,50.800000371933" />
         <EdgeLayout
-          Id="Package\Data Flow Source AIRQUALITY.Paths[Union All Output 1]"
-          TopLeft="390,287">
+          Id="Package\Data Flow Source AIRQUALITY.Paths[Flat File Source Output2]"
+          TopLeft="588.166651401256,94.0000003099442">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,58"
+              EndConnector="0,40.6000009504958"
               Start="0,0"
-              End="0,50.5">
+              End="0,33.1000009504958">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,50.5" />
+                    End="0,33.1000009504958" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Source AIRQUALITY.Paths[Flat File Source Output1]"
+          TopLeft="392.249989022812,93.2666669628355">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.7333330371645"
+              Start="0,0"
+              End="0,32.2333330371645">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.2333330371645" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Source AIRQUALITY.Paths[Flat File Source Output]"
+          TopLeft="202.91666108701,92.800000371933">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38.199999628067"
+              Start="0,0"
+              End="0,30.699999628067">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.699999628067" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7012,109 +7620,35 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="170,42"
-          Id="Package\Data Flow Source AIRQUALITY\Add SourceID 2021"
-          TopLeft="117,131" />
-        <EdgeLayout
-          Id="Package\Data Flow Source AIRQUALITY.Paths[Flat File Source Output]"
-          TopLeft="202.91666108701,92.800000371933">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,38.199999628067"
-              Start="0,0"
-              End="0,30.699999628067">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.699999628067" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Data Flow Source AIRQUALITY\Add SourceID 2022"
-          TopLeft="305,133" />
-        <EdgeLayout
-          Id="Package\Data Flow Source AIRQUALITY.Paths[Flat File Source Output1]"
-          TopLeft="392.249989022812,93.2666669628355">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,39.7333330371645"
-              Start="0,0"
-              End="0,32.2333330371645">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.2333330371645" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Data Flow Source AIRQUALITY\Add SourceID 2023"
-          TopLeft="502,134.60000126044" />
-        <EdgeLayout
-          Id="Package\Data Flow Source AIRQUALITY.Paths[Flat File Source Output2]"
-          TopLeft="588.166651401256,94.0000003099442">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,40.6000009504958"
-              Start="0,0"
-              End="0,33.1000009504958">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.1000009504958" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="123,42"
+          Id="Package\Data Flow Source AIRQUALITY\Union All"
+          TopLeft="337,240" />
         <EdgeLayout
           Id="Package\Data Flow Source AIRQUALITY.Paths[Derived Column Output]"
           TopLeft="202,173">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="160.25,72"
+              EndConnector="167.75,67"
               Start="0,0"
-              End="160.25,64.5">
+              End="167.75,59.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,42.9649595687332" />
+                    End="0,39.7188328912467" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,42.9649595687332"
-                    Point2="0,46.9649595687332"
-                    Point3="4,46.9649595687332" />
+                    Point1="0,39.7188328912467"
+                    Point2="0,43.7188328912467"
+                    Point3="4,43.7188328912467" />
                   <mssgle:LineSegment
-                    End="156.25,46.9649595687332" />
+                    End="163.75,43.7188328912467" />
                   <mssgle:CubicBezierSegment
-                    Point1="156.25,46.9649595687332"
-                    Point2="160.25,46.9649595687332"
-                    Point3="160.25,50.9649595687332" />
+                    Point1="163.75,43.7188328912467"
+                    Point2="167.75,43.7188328912467"
+                    Point3="167.75,47.7188328912467" />
                   <mssgle:LineSegment
-                    End="160.25,64.5" />
+                    End="167.75,59.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7125,18 +7659,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Source AIRQUALITY.Paths[Derived Column Output1]"
-          TopLeft="390.25,175">
+          TopLeft="390,175">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,70"
+              EndConnector="8.5,65"
               Start="0,0"
-              End="0,62.5">
+              End="8.5,57.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,62.5" />
+                    End="0,28.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.5"
+                    Point2="0,32.5"
+                    Point3="4,32.5" />
+                  <mssgle:LineSegment
+                    End="4.5,32.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4.5,32.5"
+                    Point2="8.5,32.5"
+                    Point3="8.5,36.5" />
+                  <mssgle:LineSegment
+                    End="8.5,57.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7151,26 +7697,60 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-168.25,68.39999873956"
+              EndConnector="-159.75,63.39999873956"
               Start="0,0"
-              End="-168.25,60.89999873956">
+              End="-159.75,55.89999873956">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40.6167107681227" />
+                    End="0,37.3697604507474" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,40.6167107681227"
-                    Point2="0,44.6167107681227"
-                    Point3="-4,44.6167107681227" />
+                    Point1="0,37.3697604507474"
+                    Point2="0,41.3697604507474"
+                    Point3="-4,41.3697604507474" />
                   <mssgle:LineSegment
-                    End="-164.25,44.6167107681227" />
+                    End="-155.75,41.3697604507474" />
                   <mssgle:CubicBezierSegment
-                    Point1="-164.25,44.6167107681227"
-                    Point2="-168.25,44.6167107681227"
-                    Point3="-168.25,48.6167107681227" />
+                    Point1="-155.75,41.3697604507474"
+                    Point2="-159.75,41.3697604507474"
+                    Point3="-159.75,45.3697604507474" />
                   <mssgle:LineSegment
-                    End="-168.25,60.89999873956" />
+                    End="-159.75,55.89999873956" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Source AIRQUALITY.Paths[Union All Output 1]"
+          TopLeft="398.5,282">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-9,63"
+              Start="0,0"
+              End="-9,55.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.5"
+                    Point2="0,31.5"
+                    Point3="-4,31.5" />
+                  <mssgle:LineSegment
+                    End="-5,31.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-5,31.5"
+                    Point2="-9,31.5"
+                    Point3="-9,35.5" />
+                  <mssgle:LineSegment
+                    End="-9,55.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

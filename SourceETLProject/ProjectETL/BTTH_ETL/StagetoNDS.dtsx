@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="40"
-  DTS:VersionGUID="{E6C3CCD7-C761-4736-8DE1-E807FDCB86A5}">
+  DTS:VersionBuild="43"
+  DTS:VersionGUID="{4BF1BC44-B8B4-42C6-9BE2-ABECE53BBF6A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -137,6 +137,18 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{69069E56-95B3-47DC-B2DB-ED299A211586}"
+      DTS:ObjectName="BNTIN.NDS_ISBI 9">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=BNTIN;Initial Catalog=NDS_ISBI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{69069E56-95B3-47DC-B2DB-ED299A211586}BNTIN.NDS_ISBI 9;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[BNTIN.STAGE]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{DD4DAF83-F327-4267-A327-C5D1B5C40CB6}"
@@ -194,6 +206,42 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=BNTIN;Initial Catalog=STAGE_ISBI;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{2236A603-2BD3-430C-8843-2EFA72063CB1}BNTIN.STAGE_ISBI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BNTIN.STAGE_ISBI 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{8BB6685B-D459-4B4A-8251-3531E6AA45D2}"
+      DTS:ObjectName="BNTIN.STAGE_ISBI 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=BNTIN;Initial Catalog=STAGE_ISBI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{8BB6685B-D459-4B4A-8251-3531E6AA45D2}BNTIN.STAGE_ISBI 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BNTIN.STAGE_ISBI 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{757B36BC-1BB4-4D21-B2C5-CA3BC0A00D42}"
+      DTS:ObjectName="BNTIN.STAGE_ISBI 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=BNTIN;Initial Catalog=STAGE_ISBI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{757B36BC-1BB4-4D21-B2C5-CA3BC0A00D42}BNTIN.STAGE_ISBI 2;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BNTIN.STAGE_ISBI 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7BD0BB85-B00D-4D42-921C-FC29EF8D090A}"
+      DTS:ObjectName="BNTIN.STAGE_ISBI 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=BNTIN;Initial Catalog=STAGE_ISBI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{7BD0BB85-B00D-4D42-921C-FC29EF8D090A}BNTIN.STAGE_ISBI 3;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -300,8 +348,8 @@
               <connections>
                 <connection
                   refId="Package\Load AQI_NDS\AIR_QUAITY_STAGE.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.STAGE_ISBI]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.STAGE_ISBI]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.STAGE_ISBI 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.STAGE_ISBI 3]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -660,8 +708,8 @@
               <connections>
                 <connection
                   refId="Package\Load AQI_NDS\Import AQI_NDS.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 8]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 8]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -900,8 +948,8 @@ where [refTable].[Date] = ? and [refTable].[StateSK] = ? and [refTable].[CountyS
               <connections>
                 <connection
                   refId="Package\Load AQI_NDS\Lookup AirDataSK in AQI_NDS.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 8]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 8]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -1090,8 +1138,8 @@ where [refTable].[County Name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load AQI_NDS\Lookup CountySK from COUNTIES_NDS.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 8]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 8]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -1249,8 +1297,8 @@ where [refTable].[State Code] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load AQI_NDS\Lookup StateSK from STATES_NDS.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 8]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 8]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -1363,8 +1411,8 @@ where [refTable].[State Code] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load AQI_NDS\Update AQI_NDS.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 8]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 8]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1746,8 +1794,8 @@ where [refTable].[State Code] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load COUNTIES_NDS\Import COUNTIES_NDS.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 7]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 7]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1830,13 +1878,13 @@ where [refTable].[State Code] = ?</property>
                       cachedDataType="i4"
                       cachedName="County Code"
                       externalMetadataColumnId="Package\Load COUNTIES_NDS\Import COUNTIES_NDS.Inputs[OLE DB Destination Input].ExternalColumns[County Code]"
-                      lineageId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE.Outputs[Lookup Match Output].Columns[County Code]" />
+                      lineageId="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE.Outputs[Lookup Match Output].Columns[County Code]" />
                     <inputColumn
                       refId="Package\Load COUNTIES_NDS\Import COUNTIES_NDS.Inputs[OLE DB Destination Input].Columns[SourceID]"
                       cachedDataType="i4"
                       cachedName="SourceID"
                       externalMetadataColumnId="Package\Load COUNTIES_NDS\Import COUNTIES_NDS.Inputs[OLE DB Destination Input].ExternalColumns[SourceId]"
-                      lineageId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1.Outputs[Lookup Match Output].Columns[SourceID]" />
+                      lineageId="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE.Outputs[Lookup Match Output].Columns[SourceID]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1996,8 +2044,8 @@ where [refTable].[county_fips] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load COUNTIES_NDS\Lookup COUNTIES_NDS.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 7]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 7]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -2085,11 +2133,11 @@ where [refTable].[county_fips] = ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE"
+              refId="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE"
               componentClassID="Microsoft.Lookup"
               contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
               description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-              name="Lookup CoutyName, SourceId from AIR_QUALITY_STAGE"
+              name="Lookup CoutyCode from AIR_QUALITY_STAGE"
               usesDispositions="true"
               version="6">
               <properties>
@@ -2153,19 +2201,19 @@ where [refTable].[county Name] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.STAGE_ISBI]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.STAGE_ISBI]"
+                  refId="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.STAGE_ISBI 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.STAGE_ISBI 3]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE.Inputs[Lookup Input]"
+                  refId="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE.Inputs[Lookup Input]"
                   name="Lookup Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE.Inputs[Lookup Input].Columns[county]"
+                      refId="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE.Inputs[Lookup Input].Columns[county]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
@@ -2188,18 +2236,18 @@ where [refTable].[county Name] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE.Outputs[Lookup Match Output]"
+                  refId="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE.Outputs[Lookup Match Output]"
                   errorOrTruncationOperation="Lookup"
                   errorRowDisposition="IgnoreFailure"
                   exclusionGroup="1"
                   name="Lookup Match Output"
-                  synchronousInputId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE.Outputs[Lookup Match Output].Columns[County Code]"
+                      refId="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE.Outputs[Lookup Match Output].Columns[County Code]"
                       dataType="i4"
                       errorOrTruncationOperation="Copy Column"
-                      lineageId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE.Outputs[Lookup Match Output].Columns[County Code]"
+                      lineageId="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE.Outputs[Lookup Match Output].Columns[County Code]"
                       name="County Code"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -2213,30 +2261,30 @@ where [refTable].[county Name] = ?</property>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE.Outputs[Lookup No Match Output]"
+                  refId="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE.Outputs[Lookup No Match Output]"
                   description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
                   exclusionGroup="1"
                   name="Lookup No Match Output"
-                  synchronousInputId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE.Inputs[Lookup Input]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE.Outputs[Lookup Error Output]"
+                  refId="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE.Outputs[Lookup Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Lookup Error Output"
-                  synchronousInputId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      refId="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      refId="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -2245,11 +2293,11 @@ where [refTable].[county Name] = ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1"
+              refId="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE"
               componentClassID="Microsoft.Lookup"
               contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
               description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-              name="Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1"
+              name="Lookup SourceId from AIR_QUALITY_STAGE"
               usesDispositions="true"
               version="6">
               <properties>
@@ -2313,19 +2361,19 @@ where [refTable].[county Name] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.STAGE_ISBI]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.STAGE_ISBI]"
+                  refId="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.STAGE_ISBI 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.STAGE_ISBI 3]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1.Inputs[Lookup Input]"
+                  refId="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE.Inputs[Lookup Input]"
                   name="Lookup Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1.Inputs[Lookup Input].Columns[county]"
+                      refId="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE.Inputs[Lookup Input].Columns[county]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
@@ -2348,18 +2396,18 @@ where [refTable].[county Name] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1.Outputs[Lookup Match Output]"
+                  refId="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE.Outputs[Lookup Match Output]"
                   errorOrTruncationOperation="Lookup"
                   errorRowDisposition="IgnoreFailure"
                   exclusionGroup="1"
                   name="Lookup Match Output"
-                  synchronousInputId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1.Outputs[Lookup Match Output].Columns[SourceID]"
+                      refId="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE.Outputs[Lookup Match Output].Columns[SourceID]"
                       dataType="i4"
                       errorOrTruncationOperation="Copy Column"
-                      lineageId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1.Outputs[Lookup Match Output].Columns[SourceID]"
+                      lineageId="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE.Outputs[Lookup Match Output].Columns[SourceID]"
                       name="SourceID"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -2373,30 +2421,30 @@ where [refTable].[county Name] = ?</property>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1.Outputs[Lookup No Match Output]"
+                  refId="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE.Outputs[Lookup No Match Output]"
                   description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
                   exclusionGroup="1"
                   name="Lookup No Match Output"
-                  synchronousInputId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE.Inputs[Lookup Input]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1.Outputs[Lookup Error Output]"
+                  refId="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE.Outputs[Lookup Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Lookup Error Output"
-                  synchronousInputId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1.Inputs[Lookup Input]">
+                  synchronousInputId="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      refId="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      refId="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -2474,8 +2522,8 @@ where [refTable].[state_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load COUNTIES_NDS\Lookup STATES_NDS.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 7]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 7]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -2591,8 +2639,8 @@ where [refTable].[state_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load COUNTIES_NDS\Update COUNTIES_NDS.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 7]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 7]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2824,8 +2872,8 @@ where [refTable].[state_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load COUNTIES_NDS\USCOUNTIES_STAGE.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.STAGE_ISBI]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.STAGE_ISBI]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.STAGE_ISBI 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.STAGE_ISBI 3]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3093,7 +3141,7 @@ where [refTable].[state_id] = ?</property>
           <paths>
             <path
               refId="Package\Load COUNTIES_NDS.Paths[Derived Column Output]"
-              endId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE.Inputs[Lookup Input]"
+              endId="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE.Inputs[Lookup Input]"
               name="Derived Column Output"
               startId="Package\Load COUNTIES_NDS\Add Created, LastUpdated.Outputs[Derived Column Output]" />
             <path
@@ -3113,14 +3161,14 @@ where [refTable].[state_id] = ?</property>
               startId="Package\Load COUNTIES_NDS\Lookup COUNTIES_NDS.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Load COUNTIES_NDS.Paths[Lookup Match Output2]"
-              endId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1.Inputs[Lookup Input]"
+              endId="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE.Inputs[Lookup Input]"
               name="Lookup Match Output"
-              startId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE.Outputs[Lookup Match Output]" />
+              startId="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Load COUNTIES_NDS.Paths[Lookup Match Output3]"
               endId="Package\Load COUNTIES_NDS\Lookup STATES_NDS.Inputs[Lookup Input]"
               name="Lookup Match Output"
-              startId="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1.Outputs[Lookup Match Output]" />
+              startId="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Load COUNTIES_NDS.Paths[OLE DB Source Output]"
               endId="Package\Load COUNTIES_NDS\Add Created, LastUpdated.Inputs[Derived Column Input]"
@@ -3300,8 +3348,8 @@ where [refTable].[state_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load STATES_NDS\Import STATES_NDS.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 7]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 7]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3486,8 +3534,8 @@ where [refTable].[State Name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load STATES_NDS\Lookup SourceId from AIR_QUALITY_STAGE.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.STAGE_ISBI]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.STAGE_ISBI]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.STAGE_ISBI 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.STAGE_ISBI 3]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -3646,8 +3694,8 @@ where [refTable].[State Name] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load STATES_NDS\Lookup StateCode from AIR_QUALITY_STAGE.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.STAGE_ISBI]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.STAGE_ISBI]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.STAGE_ISBI 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.STAGE_ISBI 2]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -3806,8 +3854,8 @@ where [refTable].[state_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load STATES_NDS\Lookup StateSK.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 7]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 7]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -3922,8 +3970,8 @@ where [refTable].[state_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load STATES_NDS\Update STATES_NDS.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 7]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 7]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 9]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4066,8 +4114,8 @@ where [refTable].[state_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\Load STATES_NDS\USCOUNTIES_STAGE.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BNTIN.STAGE_ISBI]"
-                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.STAGE_ISBI]"
+                  connectionManagerID="Package.ConnectionManagers[BNTIN.STAGE_ISBI 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[BNTIN.STAGE_ISBI 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4467,54 +4515,92 @@ where [refTable].[state_id] = ?</property>
           Id="Package\Load AQI_NDS\Lookup StateSK from STATES_NDS"
           TopLeft="114,154" />
         <NodeLayout
-          Size="158,42"
-          Id="Package\Load AQI_NDS\Import AQI_NDS"
-          TopLeft="306.272727272728,473.272727272728" />
+          Size="222,42"
+          Id="Package\Load AQI_NDS\Lookup AirDataSK in AQI_NDS"
+          TopLeft="123.545454545455,370.545454545455" />
+        <NodeLayout
+          Size="267,42"
+          Id="Package\Load AQI_NDS\Lookup CountySK from COUNTIES_NDS"
+          TopLeft="101,257" />
         <NodeLayout
           Size="160,42"
           Id="Package\Load AQI_NDS\Update AQI_NDS"
           TopLeft="27,471.454545454546" />
         <NodeLayout
-          Size="222,42"
-          Id="Package\Load AQI_NDS\Lookup AirDataSK in AQI_NDS"
-          TopLeft="123.545454545455,370.545454545455" />
+          Size="158,42"
+          Id="Package\Load AQI_NDS\Import AQI_NDS"
+          TopLeft="306.272727272728,473.272727272728" />
         <NodeLayout
           Size="177,42"
           Id="Package\Load AQI_NDS\AIR_QUAITY_STAGE"
           TopLeft="143,46" />
         <EdgeLayout
-          Id="Package\Load AQI_NDS.Paths[Lookup Error Output]"
-          TopLeft="270.212121212122,412.545454545455">
+          Id="Package\Load AQI_NDS.Paths[OLE DB Source Output]"
+          TopLeft="233.75,88">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="115.060606060606,60.727272727273"
+              EndConnector="0,66"
               Start="0,0"
-              End="115.060606060606,53.227272727273">
+              End="0,58.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.5516344120996" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.5516344120996"
-                    Point2="0,24.5516344120996"
-                    Point3="4,24.5516344120996" />
+                    End="0,58.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load AQI_NDS.Paths[Lookup Match Output2]"
+          TopLeft="234.522727272727,299">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,71.545454545455"
+              Start="0,0"
+              End="0,64.045454545455">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="111.060606060606,24.5516344120996" />
-                  <mssgle:CubicBezierSegment
-                    Point1="111.060606060606,24.5516344120996"
-                    Point2="115.060606060606,24.5516344120996"
-                    Point3="115.060606060606,28.5516344120996" />
-                  <mssgle:LineSegment
-                    End="115.060606060606,53.227272727273" />
+                    End="0,64.045454545455" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="11.6639163115531,29.5516344120996,91.7327734375,11.609375"
+              BoundingBox="-48.19138671875,26.2180397727275,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load AQI_NDS.Paths[Lookup Match Output1]"
+          TopLeft="235.25,196">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61"
+              Start="0,0"
+              End="0,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.9453125,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -4555,99 +4641,168 @@ where [refTable].[state_id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load AQI_NDS.Paths[OLE DB Source Output]"
-          TopLeft="233.75,88">
+          Id="Package\Load AQI_NDS.Paths[Lookup Error Output]"
+          TopLeft="270.212121212122,412.545454545455">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,66"
+              EndConnector="115.060606060606,60.727272727273"
               Start="0,0"
-              End="0,58.5">
+              End="115.060606060606,53.227272727273">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,58.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="267,42"
-          Id="Package\Load AQI_NDS\Lookup CountySK from COUNTIES_NDS"
-          TopLeft="101,257" />
-        <EdgeLayout
-          Id="Package\Load AQI_NDS.Paths[Lookup Match Output1]"
-          TopLeft="235.25,196">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,61"
-              Start="0,0"
-              End="0,53.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
+                    End="0,20.5516344120996" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.5516344120996"
+                    Point2="0,24.5516344120996"
+                    Point3="4,24.5516344120996" />
                   <mssgle:LineSegment
-                    End="0,53.5" />
+                    End="111.060606060606,24.5516344120996" />
+                  <mssgle:CubicBezierSegment
+                    Point1="111.060606060606,24.5516344120996"
+                    Point2="115.060606060606,24.5516344120996"
+                    Point3="115.060606060606,28.5516344120996" />
+                  <mssgle:LineSegment
+                    End="115.060606060606,53.227272727273" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.9453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load AQI_NDS.Paths[Lookup Match Output2]"
-          TopLeft="234.522727272727,299">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,71.545454545455"
-              Start="0,0"
-              End="0,64.045454545455">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,64.045454545455" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,26.2180397727275,96.3827734375,11.609375"
+              BoundingBox="11.6639163115531,29.5516344120996,91.7327734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load AQI_NDS\Lookup StateSK from STATES_NDS">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[STATES_NDS]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load AQI_NDS\Lookup AirDataSK in AQI_NDS">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load AQI_NDS\Lookup CountySK from COUNTIES_NDS">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load AQI_NDS\Import AQI_NDS">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load AQI_NDS\AIR_QUAITY_STAGE">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load COUNTIES_NDS">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="192,42"
-          Id="Package\Load COUNTIES_NDS\Update COUNTIES_NDS"
-          TopLeft="149,562" />
-        <NodeLayout
           Size="191,42"
           Id="Package\Load COUNTIES_NDS\Import COUNTIES_NDS"
           TopLeft="393,561" />
         <NodeLayout
+          Size="299,42"
+          Id="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE"
+          TopLeft="189.846153846154,224.384615384615" />
+        <NodeLayout
           Size="179,42"
           Id="Package\Load COUNTIES_NDS\Lookup STATES_NDS"
           TopLeft="253,385" />
+        <NodeLayout
+          Size="193,42"
+          Id="Package\Load COUNTIES_NDS\Lookup COUNTIES_NDS"
+          TopLeft="243,463" />
+        <NodeLayout
+          Size="290,42"
+          Id="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE"
+          TopLeft="196.076923076923,299.692307692308" />
+        <NodeLayout
+          Size="192,42"
+          Id="Package\Load COUNTIES_NDS\Update COUNTIES_NDS"
+          TopLeft="149,562" />
         <NodeLayout
           Size="202,42"
           Id="Package\Load COUNTIES_NDS\Add Created, LastUpdated"
@@ -4656,10 +4811,30 @@ where [refTable].[state_id] = ?</property>
           Size="180,42"
           Id="Package\Load COUNTIES_NDS\USCOUNTIES_STAGE"
           TopLeft="250,32" />
-        <NodeLayout
-          Size="193,42"
-          Id="Package\Load COUNTIES_NDS\Lookup COUNTIES_NDS"
-          TopLeft="243,463" />
+        <EdgeLayout
+          Id="Package\Load COUNTIES_NDS.Paths[Lookup Match Output]"
+          TopLeft="341,427">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36"
+              Start="0,0"
+              End="0,28.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,8.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load COUNTIES_NDS.Paths[Lookup Error Output]"
           TopLeft="370.333333333333,505">
@@ -4697,6 +4872,28 @@ where [refTable].[state_id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Load COUNTIES_NDS.Paths[Derived Column Output]"
+          TopLeft="339.173076923077,185">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39.3846153846154"
+              Start="0,0"
+              End="0,31.8846153846154">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.8846153846154" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Load COUNTIES_NDS.Paths[OLE DB Source Output]"
           TopLeft="339.5,74">
           <EdgeLayout.Curve>
@@ -4716,6 +4913,54 @@ where [refTable].[state_id] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load COUNTIES_NDS.Paths[Lookup Match Output3]"
+          TopLeft="341.788461538462,341.692307692308">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43.3076923076923"
+              Start="0,0"
+              End="0,35.8076923076923">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.8076923076923" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,12.0991586538461,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load COUNTIES_NDS.Paths[Lookup Match Output2]"
+          TopLeft="340.211538461538,266.384615384615">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33.3076923076924"
+              Start="0,0"
+              End="0,25.8076923076924">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.8076923076924" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,7.09915865384619,96.3827734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4754,108 +4999,6 @@ where [refTable].[state_id] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load COUNTIES_NDS.Paths[Lookup Match Output]"
-          TopLeft="341,427">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,36"
-              Start="0,0"
-              End="0,28.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,8.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="351,42"
-          Id="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE"
-          TopLeft="166,229" />
-        <EdgeLayout
-          Id="Package\Load COUNTIES_NDS.Paths[Derived Column Output]"
-          TopLeft="340.25,185">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,44"
-              Start="0,0"
-              End="0,36.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,36.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="351,42"
-          Id="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1"
-          TopLeft="173,302" />
-        <EdgeLayout
-          Id="Package\Load COUNTIES_NDS.Paths[Lookup Match Output2]"
-          TopLeft="345,271">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,31"
-              Start="0,0"
-              End="0,23.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,5.9453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load COUNTIES_NDS.Paths[Lookup Match Output3]"
-          TopLeft="345.5,344">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,41"
-              Start="0,0"
-              End="0,33.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,10.9453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -4869,6 +5012,29 @@ where [refTable].[state_id] = ?</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load COUNTIES_NDS\Lookup CoutyCode from AIR_QUALITY_STAGE">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[AIR_QUALITY_STAGE]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -4888,23 +5054,10 @@ where [refTable].[state_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load COUNTIES_NDS\USCOUNTIES_STAGE">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -4924,10 +5077,46 @@ where [refTable].[state_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load COUNTIES_NDS\Lookup SourceId from AIR_QUALITY_STAGE">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[AIR_QUALITY_STAGE]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load COUNTIES_NDS\USCOUNTIES_STAGE">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -4941,21 +5130,135 @@ where [refTable].[state_id] = ?</property>
           Id="Package\Load STATES_NDS\USCOUNTIES_STAGE"
           TopLeft="528,40" />
         <NodeLayout
-          Size="153,42"
-          Id="Package\Load STATES_NDS\Lookup StateSK"
-          TopLeft="544,416" />
-        <NodeLayout
-          Size="179,42"
-          Id="Package\Load STATES_NDS\Update STATES_NDS"
-          TopLeft="354,515" />
-        <NodeLayout
           Size="177,42"
           Id="Package\Load STATES_NDS\Import STATES_NDS"
           TopLeft="685,515" />
         <NodeLayout
+          Size="290,42"
+          Id="Package\Load STATES_NDS\Lookup SourceId from AIR_QUALITY_STAGE"
+          TopLeft="472,320" />
+        <NodeLayout
+          Size="153,42"
+          Id="Package\Load STATES_NDS\Lookup StateSK"
+          TopLeft="544,416" />
+        <NodeLayout
           Size="202,42"
           Id="Package\Load STATES_NDS\Add Created, LastUpdated"
           TopLeft="519,149" />
+        <NodeLayout
+          Size="296,42"
+          Id="Package\Load STATES_NDS\Lookup StateCode from AIR_QUALITY_STAGE"
+          TopLeft="475,231" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Load STATES_NDS\Update STATES_NDS"
+          TopLeft="354,515" />
+        <EdgeLayout
+          Id="Package\Load STATES_NDS.Paths[Lookup Match Output2]"
+          TopLeft="618.75,362">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54"
+              Start="0,0"
+              End="0,46.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,17.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load STATES_NDS.Paths[Lookup Match Output1]"
+          TopLeft="620,273">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47"
+              Start="0,0"
+              End="0,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,13.9453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load STATES_NDS.Paths[Lookup Match Output]"
+          TopLeft="596.333333333333,458">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-152.833333333333,57"
+              Start="0,0"
+              End="-152.833333333333,49.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.1539456662355" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.1539456662355"
+                    Point2="0,23.1539456662355"
+                    Point3="-4,23.1539456662355" />
+                  <mssgle:LineSegment
+                    End="-148.833333333333,23.1539456662355" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-148.833333333333,23.1539456662355"
+                    Point2="-152.833333333333,23.1539456662355"
+                    Point3="-152.833333333333,27.1539456662355" />
+                  <mssgle:LineSegment
+                    End="-152.833333333333,49.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-124.608053385417,28.1539456662355,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load STATES_NDS.Paths[Derived Column Output]"
+          TopLeft="621.5,191">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40"
+              Start="0,0"
+              End="0,32.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load STATES_NDS.Paths[OLE DB Source Output]"
           TopLeft="619,82">
@@ -5014,136 +5317,9 @@ where [refTable].[state_id] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load STATES_NDS.Paths[Lookup Match Output]"
-          TopLeft="596.333333333333,458">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-152.833333333333,57"
-              Start="0,0"
-              End="-152.833333333333,49.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.1539456662355" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.1539456662355"
-                    Point2="0,23.1539456662355"
-                    Point3="-4,23.1539456662355" />
-                  <mssgle:LineSegment
-                    End="-148.833333333333,23.1539456662355" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-148.833333333333,23.1539456662355"
-                    Point2="-152.833333333333,23.1539456662355"
-                    Point3="-152.833333333333,27.1539456662355" />
-                  <mssgle:LineSegment
-                    End="-152.833333333333,49.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-124.608053385417,28.1539456662355,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="296,42"
-          Id="Package\Load STATES_NDS\Lookup StateCode from AIR_QUALITY_STAGE"
-          TopLeft="475,231" />
-        <EdgeLayout
-          Id="Package\Load STATES_NDS.Paths[Derived Column Output]"
-          TopLeft="621.5,191">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,40"
-              Start="0,0"
-              End="0,32.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="290,42"
-          Id="Package\Load STATES_NDS\Lookup SourceId from AIR_QUALITY_STAGE"
-          TopLeft="472,320" />
-        <EdgeLayout
-          Id="Package\Load STATES_NDS.Paths[Lookup Match Output1]"
-          TopLeft="620,273">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,47"
-              Start="0,0"
-              End="0,39.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,39.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,13.9453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load STATES_NDS.Paths[Lookup Match Output2]"
-          TopLeft="618.75,362">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,54"
-              Start="0,0"
-              End="0,46.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,46.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,17.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load STATES_NDS\Import STATES_NDS">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Load STATES_NDS\USCOUNTIES_STAGE">
     <Properties>
@@ -5158,12 +5334,48 @@ where [refTable].[state_id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\Load STATES_NDS\Import STATES_NDS">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load STATES_NDS\Lookup SourceId from AIR_QUALITY_STAGE">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[AIR_QUALITY_STAGE]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Load STATES_NDS\Lookup StateSK">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -5173,7 +5385,7 @@ where [refTable].[state_id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -5200,131 +5412,6 @@ where [refTable].[state_id] = ?</property>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[AIR_QUALITY_STAGE]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load AQI_NDS\Lookup StateSK from STATES_NDS">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[STATES_NDS]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load AQI_NDS\Import AQI_NDS">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load AQI_NDS\Lookup AirDataSK in AQI_NDS">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load AQI_NDS\Lookup CountySK from COUNTIES_NDS">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load STATES_NDS\Lookup SourceId from AIR_QUALITY_STAGE">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load COUNTIES_NDS\Lookup CoutyName, SourceId from AIR_QUALITY_STAGE 1">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

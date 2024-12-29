@@ -1,0 +1,367 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5e69052b-feff-49fd-9698-8b76221470e9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DIM COUNTIES</ID>
+  <Name>DIM COUNTIES</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3771" scrolltop="-5794" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10583" y="14420" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_COUNTIES" left="-430" top="-370" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="7144" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000e81b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DIM_COUNTIES" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3771</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5794</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-430</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-370</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="120">
+            <Shape Id="County SK" Expanded="true">
+              <Attributes>
+                <Attribute Id="County SK" />
+                <Attribute Id="County Ascii" />
+                <Attribute Id="County Code" />
+                <Attribute Id="County Fips" />
+                <Attribute Id="County Full" />
+                <Attribute Id="County Name" />
+                <Attribute Id="Created" />
+                <Attribute Id="Last Updated" />
+                <Attribute Id="Population" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="State SK" Expanded="false">
+              <Attributes>
+                <Attribute Id="State SK" />
+              </Attributes>
+              <Position x="175" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="ff5c4aac-780a-4b26-9a3f-45f0056330ad">
+    <DataSourceViewID>DDS ISBI</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="183d05a1-3969-4f75-a4e3-89b29a521ea2">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="fbab2a52-96b1-4fdc-9b4b-a8ed569aeeeb">
+      <ID>County SK</ID>
+      <Name>County SK</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="66f2c1d3-4a91-43ba-be55-a5248cbf0f13">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="66f6925c-855e-403f-8d16-0fd1e46e7120">
+            <TableID>dbo_DIM_COUNTIES</TableID>
+            <ColumnID>CountySK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="61b585f4-b582-41e3-9913-7914da9daf9d">
+          <AttributeID>State SK</AttributeID>
+          <Name>State SK</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f38a2a8d-fc80-489d-9ae4-77ef05a75881">
+          <AttributeID>County Name</AttributeID>
+          <Name>County Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="72705967-da7f-485c-abd6-2643547468ff">
+          <AttributeID>County Ascii</AttributeID>
+          <Name>County Ascii</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d81f2141-fd3d-42cf-93fc-a09a9cc3b8bc">
+          <AttributeID>County Code</AttributeID>
+          <Name>County Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="04d5b079-cad3-450e-8497-7a1111b1c694">
+          <AttributeID>County Full</AttributeID>
+          <Name>County Full</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4c68f40d-ab2f-46f7-a8f8-86b3ecf54cdb">
+          <AttributeID>County Fips</AttributeID>
+          <Name>County Fips</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1b362e31-e9d5-4e39-9362-65cb3fa73865">
+          <AttributeID>Population</AttributeID>
+          <Name>Population</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3769bff5-de01-45d8-8334-b397dd3a6d9d">
+          <AttributeID>Created</AttributeID>
+          <Name>Created</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8fa660df-3a18-4638-97b7-198e1093b730">
+          <AttributeID>Last Updated</AttributeID>
+          <Name>Last Updated</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f50d2d5f-cc02-4c2c-9311-d3608f95eb3a">
+      <ID>State SK</ID>
+      <Name>State SK</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a67f7a18-1d81-4cf4-ac37-91239c147d7b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="321ca01e-58d9-40d6-9757-083fb4a2c0f5">
+            <TableID>dbo_DIM_COUNTIES</TableID>
+            <ColumnID>StateSK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f82da133-9c86-4d85-8031-12718581f597">
+      <ID>County Name</ID>
+      <Name>County Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bf4ca17b-44e0-4ee9-b3b4-328dddb6ab99">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ae82139e-7f8e-444a-9e1a-b387445664e4">
+            <TableID>dbo_DIM_COUNTIES</TableID>
+            <ColumnID>county_x0020_Name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="56697c6d-482e-4c15-ad0a-5a6726969cce">
+      <ID>County Ascii</ID>
+      <Name>County Ascii</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="71c1ca65-0d71-4e1d-bb9c-8675dda85cb6">
+          <DataType>WChar</DataType>
+          <DataSize>225</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0e0a83a9-da2f-4d37-a3c4-7826f3b7a782">
+            <TableID>dbo_DIM_COUNTIES</TableID>
+            <ColumnID>county_ascii</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="42ecee57-2f49-4044-9dde-ebf0e9bb02eb">
+      <ID>County Code</ID>
+      <Name>County Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4d4785fd-3c6c-498e-97e5-00028f67e280">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ee7dbb30-f7ba-4bfe-bfbf-31b285c636f8">
+            <TableID>dbo_DIM_COUNTIES</TableID>
+            <ColumnID>County_x0020_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e0c9c4d6-5245-4e8e-b220-4d12d1e8a1ab">
+      <ID>County Full</ID>
+      <Name>County Full</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e9db6c38-4165-4c03-9f45-10d27cfc81af">
+          <DataType>WChar</DataType>
+          <DataSize>225</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="859bacd3-5c35-4b4d-a2bc-ddbb063ac27e">
+            <TableID>dbo_DIM_COUNTIES</TableID>
+            <ColumnID>county_full</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fe3b6c5e-ea8a-45bc-a7d5-e562595649d4">
+      <ID>County Fips</ID>
+      <Name>County Fips</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="119d3c47-e497-4015-a7a5-e21f7e2a6aa7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="541021fb-68d3-4bd8-aa90-00db00d89c1e">
+            <TableID>dbo_DIM_COUNTIES</TableID>
+            <ColumnID>county_fips</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="63c975d5-8830-4875-8753-b9842189b449">
+      <ID>Population</ID>
+      <Name>Population</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1bf4bf05-1742-449f-89f8-700c9dde4665">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8af85193-8bfc-4852-84fc-09517b5ca75a">
+            <TableID>dbo_DIM_COUNTIES</TableID>
+            <ColumnID>population</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fb5abc1b-2e6c-4523-bc71-8f2348ea0f88">
+      <ID>Created</ID>
+      <Name>Created</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9057e840-2dbd-46c1-a503-6219a09acde1">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b38bcfa9-7113-4b08-b8d1-f58887b9c232">
+            <TableID>dbo_DIM_COUNTIES</TableID>
+            <ColumnID>Created</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6c10ae30-d1a3-43ae-9db5-10c323bf4a5e">
+      <ID>Last Updated</ID>
+      <Name>Last Updated</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b06f8751-a970-4cc9-901b-65cacf0b68eb">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a2a2985a-2e80-4226-aaf5-22d34d80c0c3">
+            <TableID>dbo_DIM_COUNTIES</TableID>
+            <ColumnID>Last_x0020_Updated</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="f43c7ae0-d0d5-493b-9b0b-aa0d32b83db5">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="cce69357-5018-43e8-bc6a-8897286441b3">
+          <ID>County SK</ID>
+          <Name>County SK</Name>
+          <SourceAttributeID>County SK</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="3e3bbbcf-45b0-4fef-8c29-183fec3af820">
+          <ID>State SK</ID>
+          <Name>State SK</Name>
+          <SourceAttributeID>State SK</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="2e23b0a8-eae9-4afa-b4ac-2a28719d411e">
+          <ID>County Ascii</ID>
+          <Name>County Ascii</Name>
+          <SourceAttributeID>County Ascii</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="44beaea4-5abd-4608-9cc7-7667de6dbda1">
+          <ID>County Code</ID>
+          <Name>County Code</Name>
+          <SourceAttributeID>County Code</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c4248a30-7e52-4447-b110-4a0d9ac4c69e">
+          <ID>County Fips</ID>
+          <Name>County Fips</Name>
+          <SourceAttributeID>County Fips</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="13b0af55-b141-401d-8177-39f723e72ad4">
+          <ID>County Full</ID>
+          <Name>County Full</Name>
+          <SourceAttributeID>County Full</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c4c00c63-9b74-4bf5-8ce7-fd6059d6031c">
+          <ID>County Name</ID>
+          <Name>County Name</Name>
+          <SourceAttributeID>County Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="b694b334-b5a3-45e1-a30b-5e86622521f6">
+          <ID>Population</ID>
+          <Name>Population</Name>
+          <SourceAttributeID>Population</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="4c891d50-7a6c-4e06-85bd-583f719bcf03">
+          <ID>Created</ID>
+          <Name>Created</Name>
+          <SourceAttributeID>Created</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="418c1d3b-4771-4ca5-b806-e86b5c426153">
+          <ID>Last Updated</ID>
+          <Name>Last Updated</Name>
+          <SourceAttributeID>Last Updated</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

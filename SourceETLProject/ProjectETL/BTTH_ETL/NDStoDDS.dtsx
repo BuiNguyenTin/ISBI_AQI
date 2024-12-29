@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="33"
-  DTS:VersionGUID="{F1D62684-9875-4D0B-BA6E-2E0AEF956E98}">
+  DTS:VersionBuild="35"
+  DTS:VersionGUID="{251CDCF0-5C4C-4E3A-B8FD-1EA5B724E735}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -101,6 +101,30 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BNTIN.DDS_ISBI 7]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{72FF9EC5-9FA3-4983-8509-A2D2B725E3E9}"
+      DTS:ObjectName="BNTIN.DDS_ISBI 7">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=BNTIN;Initial Catalog=DDS_ISBI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{72FF9EC5-9FA3-4983-8509-A2D2B725E3E9}BNTIN.DDS_ISBI 7;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BNTIN.DDS_ISBI 8]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{BE109621-0514-41DA-AA6D-7AAA6ABD66AE}"
+      DTS:ObjectName="BNTIN.DDS_ISBI 8">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=BNTIN;Initial Catalog=DDS_ISBI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{BE109621-0514-41DA-AA6D-7AAA6ABD66AE}BNTIN.DDS_ISBI 8;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[BNTIN.METADB]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{9EBBF449-8D21-4613-A12D-5A4210BC0E74}"
@@ -122,6 +146,18 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=BNTIN;Initial Catalog=METADB_ISBI;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{B8A2F0CB-B2AD-4F6C-8DFD-CC46B95C8D14}BNTIN.METADB_ISBI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BNTIN.METADB_ISBI 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{9758215F-1E46-4282-980D-A08366C004B2}"
+      DTS:ObjectName="BNTIN.METADB_ISBI 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=BNTIN;Initial Catalog=METADB_ISBI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{9758215F-1E46-4282-980D-A08366C004B2}BNTIN.METADB_ISBI 1;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -194,6 +230,42 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=BNTIN;Initial Catalog=NDS_ISBI;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{A521F4A6-BEFA-44C1-B46E-E1D2FCD343CE}BNTIN.NDS_ISBI 5;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BNTIN.NDS_ISBI 6]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{CC7FB165-0FF6-4205-92F4-7EAC742D0AB8}"
+      DTS:ObjectName="BNTIN.NDS_ISBI 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=BNTIN;Initial Catalog=NDS_ISBI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{CC7FB165-0FF6-4205-92F4-7EAC742D0AB8}BNTIN.NDS_ISBI 6;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BNTIN.NDS_ISBI 7]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7A6B9545-13CE-4813-BB13-8EEABD4F7404}"
+      DTS:ObjectName="BNTIN.NDS_ISBI 7">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=BNTIN;Initial Catalog=NDS_ISBI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{7A6B9545-13CE-4813-BB13-8EEABD4F7404}BNTIN.NDS_ISBI 7;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BNTIN.NDS_ISBI 8]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{ACDF25D2-1D74-4A00-941B-F10D5F925B36}"
+      DTS:ObjectName="BNTIN.NDS_ISBI 8">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=BNTIN;Initial Catalog=NDS_ISBI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{ACDF25D2-1D74-4A00-941B-F10D5F925B36}BNTIN.NDS_ISBI 8;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -280,11 +352,11 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Get LSET, CET from DataFlow DIM_COUNTIES"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{B8A2F0CB-B2AD-4F6C-8DFD-CC46B95C8D14}"
+          SQLTask:Connection="{9758215F-1E46-4282-980D-A08366C004B2}"
           SQLTask:SqlStatementSource="SELECT LSET, CET FROM DATA_FLOW&#xA;WHERE NAME = 'DIM_COUNTIES'"
           SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ResultBinding
@@ -304,11 +376,11 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Get LSET, CET from DataFlow DIM_STATES"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{B8A2F0CB-B2AD-4F6C-8DFD-CC46B95C8D14}"
+          SQLTask:Connection="{9758215F-1E46-4282-980D-A08366C004B2}"
           SQLTask:SqlStatementSource="SELECT LSET, CET FROM DATA_FLOW&#xA;WHERE NAME = 'DIM_STATES'"
           SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ResultBinding
@@ -328,11 +400,11 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Get LSET, CET from DataFlow FACT_AQI"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{B8A2F0CB-B2AD-4F6C-8DFD-CC46B95C8D14}"
+          SQLTask:Connection="{9758215F-1E46-4282-980D-A08366C004B2}"
           SQLTask:SqlStatementSource="SELECT LSET, CET FROM DATA_FLOW&#xA;WHERE NAME = 'DIM_DATE'"
           SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ResultBinding
@@ -575,8 +647,8 @@
                   <connections>
                     <connection
                       refId="Package\Sequence Container\Import to DIM_COUNTIES\Insert Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
-                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
+                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 8]"
+                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 8]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -768,8 +840,8 @@
                   <connections>
                     <connection
                       refId="Package\Sequence Container\Import to DIM_COUNTIES\OLE DB Command.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
-                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
+                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 8]"
+                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 8]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -815,7 +887,7 @@
                             <property
                               dataType="System.Int32"
                               description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
-                              name="DBParamInfoFlags">17</property>
+                              name="DBParamInfoFlags">81</property>
                           </properties>
                         </externalMetadataColumn>
                       </externalMetadataColumns>
@@ -880,8 +952,8 @@
                   <connections>
                     <connection
                       refId="Package\Sequence Container\Import to DIM_COUNTIES\OLE DB Command 1.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
-                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
+                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 8]"
+                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 8]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1075,7 +1147,7 @@
                             <property
                               dataType="System.Int32"
                               description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
-                              name="DBParamInfoFlags">17</property>
+                              name="DBParamInfoFlags">81</property>
                           </properties>
                         </externalMetadataColumn>
                       </externalMetadataColumns>
@@ -1140,8 +1212,8 @@
                   <connections>
                     <connection
                       refId="Package\Sequence Container\Import to DIM_COUNTIES\OLE DB Command 2.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
-                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
+                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 8]"
+                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 8]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1187,7 +1259,7 @@
                             <property
                               dataType="System.Int32"
                               description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
-                              name="DBParamInfoFlags">17</property>
+                              name="DBParamInfoFlags">81</property>
                           </properties>
                         </externalMetadataColumn>
                       </externalMetadataColumns>
@@ -1278,8 +1350,8 @@ WHERE ( [Created]&gt;= ? AND [Created] &lt; ?) OR ([Last Updated] &gt;= ? AND [L
                   <connections>
                     <connection
                       refId="Package\Sequence Container\Import to DIM_COUNTIES\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 5]"
-                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 5]"
+                      connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 7]"
+                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 7]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1617,8 +1689,8 @@ WHERE ( [Created]&gt;= ? AND [Created] &lt; ?) OR ([Last Updated] &gt;= ? AND [L
                   <connections>
                     <connection
                       refId="Package\Sequence Container\Import to DIM_COUNTIES\Slowly Changing Dimension.Connections[LookupConnection]"
-                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
-                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
+                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 8]"
+                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 8]"
                       description="Defines the connection to use for lookups in the dimension table"
                       name="LookupConnection" />
                   </connections>
@@ -2519,8 +2591,8 @@ WHERE ( [Created]&gt;= ? AND [Created] &lt; ?) OR ([Last Updated] &gt;= ? AND [L
                   <connections>
                     <connection
                       refId="Package\Sequence Container\Import to DIM_STATES\Insert Destination.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
-                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
+                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 7]"
+                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 7]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2585,7 +2657,7 @@ WHERE ( [Created]&gt;= ? AND [Created] &lt; ?) OR ([Last Updated] &gt;= ? AND [L
                           refId="Package\Sequence Container\Import to DIM_STATES\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[State Name]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="255"
                           name="State Name" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Import to DIM_STATES\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[Created]"
@@ -2654,8 +2726,8 @@ WHERE ( [Created]&gt;= ? AND [Created] &lt; ?) OR ([Last Updated] &gt;= ? AND [L
                   <connections>
                     <connection
                       refId="Package\Sequence Container\Import to DIM_STATES\OLE DB Command.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
-                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
+                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 7]"
+                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 7]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2701,7 +2773,7 @@ WHERE ( [Created]&gt;= ? AND [Created] &lt; ?) OR ([Last Updated] &gt;= ? AND [L
                             <property
                               dataType="System.Int32"
                               description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
-                              name="DBParamInfoFlags">17</property>
+                              name="DBParamInfoFlags">81</property>
                           </properties>
                         </externalMetadataColumn>
                       </externalMetadataColumns>
@@ -2766,8 +2838,8 @@ WHERE ( [Created]&gt;= ? AND [Created] &lt; ?) OR ([Last Updated] &gt;= ? AND [L
                   <connections>
                     <connection
                       refId="Package\Sequence Container\Import to DIM_STATES\OLE DB Command 1.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
-                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
+                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 7]"
+                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 7]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -2851,7 +2923,7 @@ WHERE ( [Created]&gt;= ? AND [Created] &lt; ?) OR ([Last Updated] &gt;= ? AND [L
                           refId="Package\Sequence Container\Import to DIM_STATES\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="255"
                           name="Param_3">
                           <properties>
                             <property
@@ -2868,7 +2940,7 @@ WHERE ( [Created]&gt;= ? AND [Created] &lt; ?) OR ([Last Updated] &gt;= ? AND [L
                             <property
                               dataType="System.Int32"
                               description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
-                              name="DBParamInfoFlags">17</property>
+                              name="DBParamInfoFlags">81</property>
                           </properties>
                         </externalMetadataColumn>
                       </externalMetadataColumns>
@@ -2959,8 +3031,8 @@ WHERE ( [Created]&gt;= ? AND [Created] &lt; ?) OR ([Last Updated] &gt;= ? AND [L
                   <connections>
                     <connection
                       refId="Package\Sequence Container\Import to DIM_STATES\OLE DB Source.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 5]"
-                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 5]"
+                      connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 6]"
+                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 6]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3184,8 +3256,8 @@ WHERE ( [Created]&gt;= ? AND [Created] &lt; ?) OR ([Last Updated] &gt;= ? AND [L
                   <connections>
                     <connection
                       refId="Package\Sequence Container\Import to DIM_STATES\Slowly Changing Dimension.Connections[LookupConnection]"
-                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
-                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
+                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 7]"
+                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 7]"
                       description="Defines the connection to use for lookups in the dimension table"
                       name="LookupConnection" />
                   </connections>
@@ -3246,7 +3318,7 @@ WHERE ( [Created]&gt;= ? AND [Created] &lt; ?) OR ([Last Updated] &gt;= ? AND [L
                           refId="Package\Sequence Container\Import to DIM_STATES\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[State Name]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="255"
                           name="State Name" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\Import to DIM_STATES\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[StateSK]"
@@ -3699,8 +3771,8 @@ WHERE ( [Created]&gt;= ? AND [Created] &lt; ?) OR ([Last Updated] &gt;= ? AND [L
                   <connections>
                     <connection
                       refId="Package\Sequence Container\Import to FACT_AQI\Insert FACT_AQI.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
-                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
+                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 8]"
+                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 8]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3918,8 +3990,8 @@ WHERE ( [Created]&gt;= ? AND [Created] &lt; ?) OR ([Last Updated] &gt;= ? AND [L
                   <connections>
                     <connection
                       refId="Package\Sequence Container\Import to FACT_AQI\Load AQI_NDS.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 5]"
-                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 5]"
+                      connectionManagerID="Package.ConnectionManagers[BNTIN.NDS_ISBI 8]"
+                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.NDS_ISBI 8]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -4259,8 +4331,8 @@ where [refTable].[Date] = ?</property>
                   <connections>
                     <connection
                       refId="Package\Sequence Container\Import to FACT_AQI\Lookup DateSK.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
-                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 6]"
+                      connectionManagerID="Package.ConnectionManagers[BNTIN.DDS_ISBI 8]"
+                      connectionManagerRefId="Package.ConnectionManagers[BNTIN.DDS_ISBI 8]"
                       description="Connection manager used to access lookup data."
                       name="OleDbConnection" />
                   </connections>
@@ -4391,11 +4463,11 @@ where [refTable].[Date] = ?</property>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Set CET to DataFlow DIM_COUNTIES"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{B8A2F0CB-B2AD-4F6C-8DFD-CC46B95C8D14}"
+          SQLTask:Connection="{9758215F-1E46-4282-980D-A08366C004B2}"
           SQLTask:SqlStatementSource="UPDATE DATA_FLOW &#xA;SET CET = GETDATE()&#xA;WHERE NAME = 'DIM_COUNTIES'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -4407,11 +4479,11 @@ where [refTable].[Date] = ?</property>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Set CET to DataFlow DIM_STATES"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{B8A2F0CB-B2AD-4F6C-8DFD-CC46B95C8D14}"
+          SQLTask:Connection="{9758215F-1E46-4282-980D-A08366C004B2}"
           SQLTask:SqlStatementSource="UPDATE DATA_FLOW &#xA;SET CET = GETDATE()&#xA;WHERE NAME = 'DIM_STATES'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -4423,11 +4495,11 @@ where [refTable].[Date] = ?</property>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Set CET to DataFlow FACT_AQI"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{B8A2F0CB-B2AD-4F6C-8DFD-CC46B95C8D14}"
+          SQLTask:Connection="{9758215F-1E46-4282-980D-A08366C004B2}"
           SQLTask:SqlStatementSource="UPDATE DATA_FLOW &#xA;SET CET = GETDATE()&#xA;WHERE NAME = 'DIM_DATE'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -4439,11 +4511,11 @@ where [refTable].[Date] = ?</property>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Set LSET DIM_COUNTIES"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{B8A2F0CB-B2AD-4F6C-8DFD-CC46B95C8D14}"
+          SQLTask:Connection="{9758215F-1E46-4282-980D-A08366C004B2}"
           SQLTask:SqlStatementSource="UPDATE DATA_FLOW&#xA;SET LSET = GETDATE()&#xA;WHERE NAME = 'DIM_COUNTIES'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -4455,11 +4527,11 @@ where [refTable].[Date] = ?</property>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Set LSET DIM_STATES"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{B8A2F0CB-B2AD-4F6C-8DFD-CC46B95C8D14}"
+          SQLTask:Connection="{9758215F-1E46-4282-980D-A08366C004B2}"
           SQLTask:SqlStatementSource="UPDATE DATA_FLOW&#xA;SET LSET = GETDATE()&#xA;WHERE NAME = 'DIM_STATES'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -4471,11 +4543,11 @@ where [refTable].[Date] = ?</property>
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Set LSET FACT_AQI"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{B8A2F0CB-B2AD-4F6C-8DFD-CC46B95C8D14}"
+          SQLTask:Connection="{9758215F-1E46-4282-980D-A08366C004B2}"
           SQLTask:SqlStatementSource="UPDATE DATA_FLOW&#xA;SET LSET = GETDATE()&#xA;WHERE NAME = 'FACT_AQI'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -4656,15 +4728,15 @@ where [refTable].[Date] = ?</property>
         <NodeLayout
           Size="200,42"
           Id="Package\Set LSET DIM_COUNTIES"
-          TopLeft="805,803" />
+          TopLeft="807,693" />
         <NodeLayout
           Size="186,42"
           Id="Package\Set LSET DIM_STATES"
-          TopLeft="558,805" />
+          TopLeft="560,695" />
         <NodeLayout
           Size="173,42"
           Id="Package\Set LSET FACT_AQI"
-          TopLeft="339,808" />
+          TopLeft="341,698" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="333.5,121">
@@ -4827,26 +4899,26 @@ where [refTable].[Date] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-157.75,173"
+              EndConnector="-155.75,63"
               Start="0,0"
-              End="-157.75,165.5">
+              End="-155.75,55.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,54.7663885578069" />
+                    End="0,17.4004767580453" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,54.7663885578069"
-                    Point2="0,58.7663885578069"
-                    Point3="-4,58.7663885578069" />
+                    Point1="0,17.4004767580453"
+                    Point2="0,21.4004767580453"
+                    Point3="-4,21.4004767580453" />
                   <mssgle:LineSegment
-                    End="-153.75,58.7663885578069" />
+                    End="-151.75,21.4004767580453" />
                   <mssgle:CubicBezierSegment
-                    Point1="-153.75,58.7663885578069"
-                    Point2="-157.75,58.7663885578069"
-                    Point3="-157.75,62.7663885578069" />
+                    Point1="-151.75,21.4004767580453"
+                    Point2="-155.75,21.4004767580453"
+                    Point3="-155.75,25.4004767580453" />
                   <mssgle:LineSegment
-                    End="-157.75,165.5" />
+                    End="-155.75,55.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4857,18 +4929,18 @@ where [refTable].[Date] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 8]"
-          TopLeft="650.75,635">
+          TopLeft="651.75,635">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,170"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,162.5">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,162.5" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4883,26 +4955,26 @@ where [refTable].[Date] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="187.25,168"
+              EndConnector="189.25,58"
               Start="0,0"
-              End="187.25,160.5">
+              End="189.25,50.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,53.0679380214541" />
+                    End="0,15.7020262216925" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,53.0679380214541"
-                    Point2="0,57.0679380214541"
-                    Point3="4,57.0679380214541" />
+                    Point1="0,15.7020262216925"
+                    Point2="0,19.7020262216925"
+                    Point3="4,19.7020262216925" />
                   <mssgle:LineSegment
-                    End="183.25,57.0679380214541" />
+                    End="185.25,19.7020262216925" />
                   <mssgle:CubicBezierSegment
-                    Point1="183.25,57.0679380214541"
-                    Point2="187.25,57.0679380214541"
-                    Point3="187.25,61.0679380214541" />
+                    Point1="185.25,19.7020262216925"
+                    Point2="189.25,19.7020262216925"
+                    Point3="189.25,23.7020262216925" />
                   <mssgle:LineSegment
-                    End="187.25,160.5" />
+                    End="189.25,50.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5232,7 +5304,7 @@ where [refTable].[Date] = ?</property>
         <Value
           type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SCDWizardMetadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionID&gt;{97B33387-4A33-44D7-BD39-31971873F844}&lt;/ConnectionID&gt;
+  &lt;ConnectionID&gt;{BE109621-0514-41DA-AA6D-7AAA6ABD66AE}&lt;/ConnectionID&gt;
   &lt;TableName&gt;[dbo].[DIM_COUNTIES]&lt;/TableName&gt;
   &lt;InputToColumnsCollection&gt;
     &lt;InputColumnToDBColumn&gt;
@@ -5606,7 +5678,7 @@ where [refTable].[Date] = ?</property>
         <Value
           type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SCDWizardMetadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionID&gt;{97B33387-4A33-44D7-BD39-31971873F844}&lt;/ConnectionID&gt;
+  &lt;ConnectionID&gt;{72FF9EC5-9FA3-4983-8509-A2D2B725E3E9}&lt;/ConnectionID&gt;
   &lt;TableName&gt;[dbo].[DIM_STATES]&lt;/TableName&gt;
   &lt;InputToColumnsCollection&gt;
     &lt;InputColumnToDBColumn&gt;
@@ -5681,13 +5753,13 @@ where [refTable].[Date] = ?</property>
           Id="Package\Sequence Container\Import to FACT_AQI\Load AQI_NDS"
           TopLeft="344,32" />
         <NodeLayout
-          Size="151,42"
-          Id="Package\Sequence Container\Import to FACT_AQI\Lookup DateSK"
-          TopLeft="349,140" />
-        <NodeLayout
           Size="158,42"
           Id="Package\Sequence Container\Import to FACT_AQI\Insert FACT_AQI"
           TopLeft="345,347" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Sequence Container\Import to FACT_AQI\Lookup DateSK"
+          TopLeft="349,140" />
         <EdgeLayout
           Id="Package\Sequence Container\Import to FACT_AQI.Paths[OLE DB Source Output]"
           TopLeft="421.5,74">
@@ -5746,29 +5818,6 @@ where [refTable].[Date] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Import to FACT_AQI\Lookup DateSK">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string"></Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Sequence Container\Import to FACT_AQI\Insert FACT_AQI">
     <Properties>
       <Property>
@@ -5778,6 +5827,29 @@ where [refTable].[Date] = ?</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Import to FACT_AQI\Lookup DateSK">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

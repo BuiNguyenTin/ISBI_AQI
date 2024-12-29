@@ -3,8 +3,8 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>BNTIN/MSSQLSERVER_TIN</TargetServer>
-        <TargetDatabase>SSAS_Group08</TargetDatabase>
+        <TargetServer>BNTIN</TargetServer>
+        <TargetDatabase>SSAS_08</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>
           <ObjectType>Current</ObjectType>

@@ -15,7 +15,7 @@ CREATE TABLE [DIM_STATES](
 	[StateSK] INT,
 
 	[State Code] int,
-	[State Name] VARCHAR(50) NULL,
+	[State Name] VARCHAR(255) NULL,
 	[Created] DATETIME NULL,
 	[Last Updated] DATETIME NULL,
 	[Status] bit NULL,
